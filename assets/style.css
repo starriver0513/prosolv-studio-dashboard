@@ -541,6 +541,229 @@ header .header-meta > span {
   letter-spacing: 0;
 }
 
+/* Skill command center */
+.skill-command-layout {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 12px;
+  margin-bottom: 22px;
+}
+
+@media (min-width: 1100px) {
+  .skill-command-layout {
+    grid-template-columns: minmax(280px, 1.1fr) minmax(260px, 0.9fr) minmax(280px, 1fr);
+  }
+}
+
+.skill-hero-panel,
+.skill-groups-panel,
+.skill-bu-panel,
+.content-skill-band,
+.skill-bu-section {
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background:
+    linear-gradient(135deg, rgba(34, 211, 238, 0.1), transparent 42%),
+    linear-gradient(225deg, rgba(139, 92, 246, 0.12), transparent 46%),
+    rgba(10, 16, 38, 0.9);
+}
+
+.skill-hero-panel,
+.skill-groups-panel,
+.skill-bu-panel {
+  padding: 20px;
+}
+
+.skill-hero-panel h3,
+.skill-groups-panel h3,
+.skill-bu-panel h3 {
+  font-size: 24px;
+  line-height: 1.25;
+}
+
+.skill-hero-panel p {
+  margin-top: 10px;
+  color: var(--muted);
+  font-size: 14px;
+}
+
+.skill-hero-metrics {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 8px;
+  margin-top: 18px;
+}
+
+.skill-hero-metrics div {
+  min-height: 74px;
+  padding: 10px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: rgba(8, 13, 33, 0.72);
+}
+
+.skill-hero-metrics strong {
+  display: block;
+  color: var(--accent);
+  font-size: 28px;
+  line-height: 1;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+}
+
+.skill-hero-metrics span {
+  display: block;
+  margin-top: 6px;
+  color: var(--muted);
+  font-size: 12px;
+}
+
+.skill-primary-link {
+  display: inline-flex;
+  align-items: center;
+  min-height: 40px;
+  margin-top: 16px;
+  padding: 10px 14px;
+  border-radius: 8px;
+  border: 1px solid var(--line-strong);
+  background: rgba(34, 211, 238, 0.14);
+  color: var(--foreground);
+  font-weight: 850;
+}
+
+.skill-group-row {
+  margin-top: 12px;
+}
+
+.skill-group-row > div:first-child {
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+  color: var(--muted);
+  font-size: 13px;
+}
+
+.skill-group-row strong { color: var(--foreground); }
+
+.skill-group-meter {
+  height: 8px;
+  margin-top: 6px;
+  overflow: hidden;
+  border-radius: 999px;
+  background: rgba(148, 163, 184, 0.14);
+}
+
+.skill-group-meter i {
+  display: block;
+  height: 100%;
+  border-radius: inherit;
+  background: linear-gradient(90deg, var(--accent), var(--accent-2), var(--accent-3));
+}
+
+.skill-bu-row {
+  display: grid;
+  grid-template-columns: 48px 1fr;
+  gap: 4px 10px;
+  align-items: center;
+  min-height: 62px;
+  margin-top: 10px;
+  padding: 10px;
+  border: 1px solid var(--line);
+  border-left: 3px solid var(--skill-bu-color);
+  border-radius: 8px;
+  background: rgba(8, 13, 33, 0.72);
+  color: var(--foreground);
+}
+
+.skill-bu-row span {
+  grid-row: span 2;
+  color: var(--skill-bu-color);
+  font-size: 12px;
+  font-weight: 900;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+}
+
+.skill-bu-row small {
+  color: var(--muted);
+  font-size: 12px;
+}
+
+.content-skill-band,
+.skill-bu-section {
+  padding: 20px;
+  margin-bottom: 22px;
+}
+
+.skill-summary-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 14px;
+}
+
+.skill-card-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+}
+
+@media (min-width: 760px) {
+  .skill-card-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+
+@media (min-width: 1220px) {
+  .skill-card-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+}
+
+.skill-card {
+  min-height: 142px;
+  padding: 14px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: rgba(8, 13, 33, 0.72);
+}
+
+.skill-card-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  margin-bottom: 10px;
+}
+
+.skill-card code {
+  padding: 3px 7px;
+  border-radius: 5px;
+  background: rgba(34, 211, 238, 0.1);
+  color: #e0f2fe;
+  font-size: 12px;
+}
+
+.skill-card-top span {
+  color: var(--accent);
+  font-size: 12px;
+  font-weight: 850;
+}
+
+.skill-card strong {
+  display: block;
+  color: var(--foreground);
+  font-size: 16px;
+  line-height: 1.35;
+}
+
+.skill-card p {
+  margin-top: 7px;
+  color: var(--muted);
+  font-size: 13px;
+}
+
+.skill-card small {
+  display: block;
+  margin-top: 10px;
+  color: var(--muted-2);
+  font-size: 12px;
+}
+
 /* Business units */
 .bu-grid {
   display: grid;

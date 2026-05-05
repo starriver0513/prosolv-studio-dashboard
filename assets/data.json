@@ -4,16 +4,615 @@
   "total_open": 203,
   "total_in_progress": 47,
   "p0_tasks": 31,
-  "total_md": 15240,
-  "total_skills": 103,
-  "last_update": "2026-05-05 09:35",
+  "total_md": 15243,
+  "total_skills": 74,
+  "content_skills": 31,
+  "all_skills": [
+    {
+      "command": "/x-long-post",
+      "display": "Xロングポスト",
+      "usage": "3,000〜25,000字のXロングポスト生成（SNS統一10ステップ）",
+      "category": "X (Twitter)",
+      "group": "コンテンツ制作",
+      "business_unit": "SNS事業部"
+    },
+    {
+      "command": "/x-article",
+      "display": "X記事",
+      "usage": "X Premium+ 長尺記事（目次・見出し付き 8,000〜25,000字）",
+      "category": "X (Twitter)",
+      "group": "コンテンツ制作",
+      "business_unit": "SNS事業部"
+    },
+    {
+      "command": "/x-article-writer",
+      "display": "X記事ライター",
+      "usage": "星川文体・構成ルール完全準拠の高品質記事生成",
+      "category": "X (Twitter)",
+      "group": "コンテンツ制作",
+      "business_unit": "SNS事業部"
+    },
+    {
+      "command": "/x-article-thumbnail",
+      "display": "X記事サムネ",
+      "usage": "nano-banana-pro-preview でX記事サムネ生成（3トンマナ）",
+      "category": "X (Twitter)",
+      "group": "コンテンツ制作",
+      "business_unit": "SNS事業部"
+    },
+    {
+      "command": "/x-skills",
+      "display": "X一括生成",
+      "usage": "リアルタイムリサーチ→候補8本→評価→Typefully予約（1日4本構成）",
+      "category": "X (Twitter)",
+      "group": "コンテンツ制作",
+      "business_unit": "SNS事業部"
+    },
+    {
+      "command": "/x-bookmarks",
+      "display": "Xブックマーク取込",
+      "usage": "API経由でX投稿をブックマーク収集→構造化保存（v3.1多段エンリッチ）",
+      "category": "X (Twitter)",
+      "group": "コンテンツ制作",
+      "business_unit": "SNS事業部"
+    },
+    {
+      "command": "/knowledge-x",
+      "display": "Xナレッジ抽出",
+      "usage": "X/Threads投稿URLから本文・スレッド・引用元・コメント抽出",
+      "category": "X (Twitter)",
+      "group": "コンテンツ制作",
+      "business_unit": "SNS事業部"
+    },
+    {
+      "command": "/threads",
+      "display": "Threads投稿",
+      "usage": "5モード対応（単発/教育/長文画像/スレッド/カレンダー）",
+      "category": "Threads",
+      "group": "コンテンツ制作",
+      "business_unit": "SNS事業部"
+    },
+    {
+      "command": "/youtube-research",
+      "display": "YouTubeリサーチ",
+      "usage": "キーワード/チャンネル/URLからベンチマーク動画分析",
+      "category": "YouTube",
+      "group": "コンテンツ制作",
+      "business_unit": "SNS事業部"
+    },
+    {
+      "command": "/youtube-planning",
+      "display": "YouTube企画",
+      "usage": "リサーチデータから企画案・タイトル・サムネ・骨組み作成",
+      "category": "YouTube",
+      "group": "コンテンツ制作",
+      "business_unit": "SNS事業部"
+    },
+    {
+      "command": "/youtube-script",
+      "display": "YouTube台本",
+      "usage": "企画確定後の最終台本（横動画/ショート）",
+      "category": "YouTube",
+      "group": "コンテンツ制作",
+      "business_unit": "SNS事業部"
+    },
+    {
+      "command": "/instagram-feed",
+      "display": "Instagramフィード",
+      "usage": "カルーセル/単一画像 + キャプション生成",
+      "category": "Instagram",
+      "group": "コンテンツ制作",
+      "business_unit": "SNS事業部"
+    },
+    {
+      "command": "/instagram-reel",
+      "display": "Instagramリール",
+      "usage": "縦型ショート動画15〜90秒台本（星川/受講生モード）",
+      "category": "Instagram",
+      "group": "コンテンツ制作",
+      "business_unit": "SNS事業部"
+    },
+    {
+      "command": "/instagram-stories",
+      "display": "Instagramストーリーズ",
+      "usage": "24時間限定3〜4枚台本（3大施策対応）",
+      "category": "Instagram",
+      "group": "コンテンツ制作",
+      "business_unit": "SNS事業部"
+    },
+    {
+      "command": "/ig-reel-research",
+      "display": "リールリサーチ",
+      "usage": "キーワード→Apify→品質ゲート→xAI Grok STT解析",
+      "category": "Instagram",
+      "group": "コンテンツ制作",
+      "business_unit": "SNS事業部"
+    },
+    {
+      "command": "/nanobanana",
+      "display": "画像生成",
+      "usage": "Gemini APIでビジュアルスライド図解画像を一発生成",
+      "category": "画像・スライド",
+      "group": "コンテンツ制作",
+      "business_unit": "SNS事業部"
+    },
+    {
+      "command": "/image",
+      "display": "汎用画像",
+      "usage": "gpt-image-2でサムネ・バナー・OGP・キービジュアル生成（14スタイル）",
+      "category": "画像・スライド",
+      "group": "コンテンツ制作",
+      "business_unit": "SNS事業部"
+    },
+    {
+      "command": "/slide",
+      "display": "スライド生成",
+      "usage": "14コアレイアウト×27図解パターンでセミナースライド生成",
+      "category": "画像・スライド",
+      "group": "コンテンツ制作",
+      "business_unit": "SNS事業部"
+    },
+    {
+      "command": "/taidan-sheet-inserter",
+      "display": "対談シート挿入",
+      "usage": "対談スプシへの行追加・更新",
+      "category": "対談・特殊系",
+      "group": "コンテンツ制作",
+      "business_unit": "SNS事業部"
+    },
+    {
+      "command": "/taidan-video-title",
+      "display": "対談動画タイトル",
+      "usage": "対談動画のタイトル生成",
+      "category": "対談・特殊系",
+      "group": "コンテンツ制作",
+      "business_unit": "SNS事業部"
+    },
+    {
+      "command": "/chatwork",
+      "display": "Chatwork操作",
+      "usage": "API経由でメッセージ閲覧・送信・予約・タスク管理",
+      "category": "Chatwork配信・連携",
+      "group": "経営管理",
+      "business_unit": "プロダクト事業部"
+    },
+    {
+      "command": "/chatwork-delivery",
+      "display": "Chatwork全体配信",
+      "usage": "AIマーケ講座の全体配信文を星川文体で自動生成",
+      "category": "Chatwork配信・連携",
+      "group": "販売・CS",
+      "business_unit": "プロダクト事業部"
+    },
+    {
+      "command": "/cs-inbox",
+      "display": "CS未返信巡回",
+      "usage": "Chatwork未返信を一括巡回トリアージ（D6 CS）",
+      "category": "CS・受講生対応",
+      "group": "販売・CS",
+      "business_unit": "プロダクト事業部"
+    },
+    {
+      "command": "/shitumonn",
+      "display": "受講生質問対応",
+      "usage": "質問チャットの質問確認→星川文体回答→送信",
+      "category": "CS・受講生対応",
+      "group": "販売・CS",
+      "business_unit": "プロダクト事業部"
+    },
+    {
+      "command": "/seminar-archive-html",
+      "display": "セミナーアーカイブHTML",
+      "usage": "UTAGE埋込用アーカイブHTML（Part1/Part2分割）",
+      "category": "セミナー・コンテンツ",
+      "group": "コンテンツ制作",
+      "business_unit": "プロダクト事業部"
+    },
+    {
+      "command": "/qa-update",
+      "display": "NotebookLM Q&A更新",
+      "usage": "AIマーケ講座Q&Aボットのナレッジ更新",
+      "category": "セミナー・コンテンツ",
+      "group": "コンテンツ制作",
+      "business_unit": "プロダクト事業部"
+    },
+    {
+      "command": "/utage",
+      "display": "UTAGE API",
+      "usage": "ファネル・ステップ・ページ・配信アカウント・シナリオ管理",
+      "category": "UTAGE（LP・配信プラットフォーム）",
+      "group": "販売・CS",
+      "business_unit": "セールス"
+    },
+    {
+      "command": "/utage-html",
+      "display": "UTAGE HTML",
+      "usage": "紫グラデ×ピンクのカスタムHTML生成（Drive動画埋込含む）",
+      "category": "UTAGE（LP・配信プラットフォーム）",
+      "group": "ナレッジ収集",
+      "business_unit": "セールス"
+    },
+    {
+      "command": "/slide",
+      "display": "セミナースライド",
+      "usage": "14コアレイアウト×27図解パターン（SNS事業部と共有）",
+      "category": "セミナースライド",
+      "group": "コンテンツ制作",
+      "business_unit": "セールス"
+    },
+    {
+      "command": "/campaign",
+      "display": "コンテンツカレンダー",
+      "usage": "1週間〜1ヶ月の投稿計画をテーマ・フック付きで生成",
+      "category": "コンテンツカレンダー・配信計画",
+      "group": "コンテンツ制作",
+      "business_unit": "リストマーケ事業部"
+    },
+    {
+      "command": "/line-intake",
+      "display": "LINEトーク取込",
+      "usage": "📦LINEトーク保存倉庫の.txt自動分類→CS抽出→ローンチ配信パターン抽出",
+      "category": "LINE・オープンチャット運用",
+      "group": "販売・CS",
+      "business_unit": "リストマーケ事業部"
+    },
+    {
+      "command": "/comm-self-audit",
+      "display": "LINE/CW自己監査",
+      "usage": "LINE/CW/iMessage横断分析→未返信・FAQ化候補可視化",
+      "category": "LINE・オープンチャット運用",
+      "group": "経営管理",
+      "business_unit": "リストマーケ事業部"
+    },
+    {
+      "command": "/freee",
+      "display": "freee API",
+      "usage": "仕訳登録・証憑OCR・月次推移レポート・請求書発行",
+      "category": "freee連携・仕訳",
+      "group": "経理・管理",
+      "business_unit": "経理"
+    },
+    {
+      "command": "/receipt",
+      "display": "レシートOCR",
+      "usage": "レシート/領収書画像をGemini Vision→freee起票下書き",
+      "category": "freee連携・仕訳",
+      "group": "コンテンツ制作",
+      "business_unit": "経理"
+    },
+    {
+      "command": "/payment-monitor",
+      "display": "決済失敗監視",
+      "usage": "カード停止・決済失敗・引落エラーをGmail/freee/CW横断検知→Todoist起票",
+      "category": "決済・メール監視",
+      "group": "経営管理",
+      "business_unit": "経理"
+    },
+    {
+      "command": "/gmail",
+      "display": "Gmail API",
+      "usage": "OAuth2直取りスクリプトでメール検索・本文取得・決済メール一括ダンプ",
+      "category": "決済・メール監視",
+      "group": "販売・CS",
+      "business_unit": "経理"
+    },
+    {
+      "command": "/zeiri",
+      "display": "法人化プロジェクト",
+      "usage": "税理士探し・面談準備・進捗管理・シミュレーション",
+      "category": "法人化・税務",
+      "group": "経理・管理",
+      "business_unit": "経理"
+    },
+    {
+      "command": "/morning",
+      "display": "朝のダッシュボード",
+      "usage": "D8オーケストレーター版（D1〜D8アラート/KPI/フォーカス/Gmailトリアージ）",
+      "category": "日次・週次ルーティン",
+      "group": "経営管理",
+      "business_unit": "経営企画"
+    },
+    {
+      "command": "/shutdown",
+      "display": "終業処理",
+      "usage": "日次レポート・current-projects.md更新・D1〜D8サマリー生成",
+      "category": "日次・週次ルーティン",
+      "group": "経営管理",
+      "business_unit": "経営企画"
+    },
+    {
+      "command": "/daily-audit",
+      "display": "日次監査",
+      "usage": "全要件チェック→自動修正→新規ナレッジ取得（毎日12:00自動）",
+      "category": "日次・週次ルーティン",
+      "group": "ナレッジ収集",
+      "business_unit": "経営企画"
+    },
+    {
+      "command": "/weekly-evolve",
+      "display": "週次棚卸し",
+      "usage": "過去7日のラリー/学び/アイディア/改善キューをメタ分析（毎週日曜12:00）",
+      "category": "日次・週次ルーティン",
+      "group": "経営管理",
+      "business_unit": "経営企画"
+    },
+    {
+      "command": "/dashboard",
+      "display": "経営ダッシュボード",
+      "usage": "Prosolv Studio経営ダッシュボード起動・更新（http://localhost:3100）",
+      "category": "ダッシュボード・データ分析",
+      "group": "経営管理",
+      "business_unit": "経営企画"
+    },
+    {
+      "command": "/analyze",
+      "display": "データ分析",
+      "usage": "CSV/SNS数値/競合分析",
+      "category": "ダッシュボード・データ分析",
+      "group": "経営管理",
+      "business_unit": "経営企画"
+    },
+    {
+      "command": "/task",
+      "display": "タスク管理（v1）",
+      "usage": "Todoist+CW+引き継ぎを統合した番号付きリスト表示",
+      "category": "タスク管理（ローカル+Todoist連携）",
+      "group": "経営管理",
+      "business_unit": "経営企画"
+    },
+    {
+      "command": "/tasks",
+      "display": "タスク管理（v2）",
+      "usage": "ローカルファースト/事業部横断/自動実行/承認処理",
+      "category": "タスク管理（ローカル+Todoist連携）",
+      "group": "経営管理",
+      "business_unit": "経営企画"
+    },
+    {
+      "command": "/task-enrich",
+      "display": "Todoistエンリッチ",
+      "usage": "素のタスクをプレイブック型即実行可能タスクに自動最適化",
+      "category": "タスク管理（ローカル+Todoist連携）",
+      "group": "経営管理",
+      "business_unit": "経営企画"
+    },
+    {
+      "command": "/todoist",
+      "display": "Todoist操作",
+      "usage": "タスク追加・完了・一覧・更新・削除・全体最適化",
+      "category": "タスク管理（ローカル+Todoist連携）",
+      "group": "経営管理",
+      "business_unit": "経営企画"
+    },
+    {
+      "command": "/todoist-api",
+      "display": "Todoist API",
+      "usage": "Todoist API直叩きでタスク・プロジェクト・ラベル管理",
+      "category": "タスク管理（ローカル+Todoist連携）",
+      "group": "経営管理",
+      "business_unit": "経営企画"
+    },
+    {
+      "command": "/schedule",
+      "display": "スケジュール",
+      "usage": "Googleカレンダー連携で予定確認・追加・空き時間検索",
+      "category": "タスク管理（ローカル+Todoist連携）",
+      "group": "ナレッジ収集",
+      "business_unit": "経営企画"
+    },
+    {
+      "command": "/sync",
+      "display": "ワークスペース同期",
+      "usage": "ローカル/クラウドの同期処理",
+      "category": "ワークスペース同期",
+      "group": "ナレッジ収集",
+      "business_unit": "経営企画"
+    },
+    {
+      "command": "/auto-skill",
+      "display": "自動スキル化",
+      "usage": "直前ラリーから新規スキル候補・既存拡張候補を検出→skill-creatorに委譲",
+      "category": "スキル開発・改善",
+      "group": "自動化・改善",
+      "business_unit": "AI活用事業部"
+    },
+    {
+      "command": "/anthropic-skills:skill-creator",
+      "display": "skill-creator",
+      "usage": "公式スキル作成ツール（対話的にSKILL.md作成・eval）",
+      "category": "スキル開発・改善",
+      "group": "自動化・改善",
+      "business_unit": "AI活用事業部"
+    },
+    {
+      "command": "/empirical-prompt-tuning",
+      "display": "プロンプトチューニング",
+      "usage": "マーケコンテンツ生成スキルを白紙subagentに叩かせ両面評価",
+      "category": "スキル開発・改善",
+      "group": "コンテンツ制作",
+      "business_unit": "AI活用事業部"
+    },
+    {
+      "command": "/FB",
+      "display": "スキルFB改善",
+      "usage": "台本生成系スキルへのFBを受けてプロンプト・参照ナレッジ自動改善",
+      "category": "スキル開発・改善",
+      "group": "コンテンツ制作",
+      "business_unit": "AI活用事業部"
+    },
+    {
+      "command": "/fb-propagate",
+      "display": "FB全体適応",
+      "usage": "1FBを関連全スキル/ナレッジ/メモリ候補に一括伝播",
+      "category": "スキル開発・改善",
+      "group": "ナレッジ収集",
+      "business_unit": "AI活用事業部"
+    },
+    {
+      "command": "/codex",
+      "display": "Codex連携",
+      "usage": "OpenAI Codex（GPT）でテキスト・コード生成",
+      "category": "システム運用・連携",
+      "group": "自動化・改善",
+      "business_unit": "AI活用事業部"
+    },
+    {
+      "command": "/migrate-data",
+      "display": "データ移行",
+      "usage": "既存データ移行プランを実行（大規模再編成専用）",
+      "category": "システム運用・連携",
+      "group": "自動化・改善",
+      "business_unit": "AI活用事業部"
+    },
+    {
+      "command": "/env-bootstrap",
+      "display": "環境変数セットアップ",
+      "usage": "APIキー・.env・認証トークンの取得/読み込み/エクスポート標準化",
+      "category": "システム運用・連携",
+      "group": "自動化・改善",
+      "business_unit": "AI活用事業部"
+    },
+    {
+      "command": "/ai-management-evolution",
+      "display": "AI経営ディレクトリ改善",
+      "usage": "事業部フォルダを1媒体・1継続タスク・1主要スキル・必要ナレッジ一式へ継続改善",
+      "category": "システム運用・連携",
+      "group": "ナレッジ収集",
+      "business_unit": "AI活用事業部"
+    },
+    {
+      "command": "/simple",
+      "display": "ブレストスキル",
+      "usage": "クリエイティブ作業や設計判断前の対話型ブレスト",
+      "category": "ブレスト・整理",
+      "group": "その他",
+      "business_unit": "AI活用事業部"
+    },
+    {
+      "command": "/capture",
+      "display": "アイディア取込",
+      "usage": "雑多な学び・アイディア・壁打ち・改善案を自動分類・保存",
+      "category": "ブレスト・整理",
+      "group": "自動化・改善",
+      "business_unit": "AI活用事業部"
+    },
+    {
+      "command": "/organize",
+      "display": "毎ラリー整理",
+      "usage": "直前セッションをAI内省→7カテゴリ判定→提案→承認→一括実行",
+      "category": "ブレスト・整理",
+      "group": "自動化・改善",
+      "business_unit": "AI活用事業部"
+    },
+    {
+      "command": "/knowledge",
+      "display": "ナレッジ更新",
+      "usage": "雑多に投げた情報を最適なナレッジファイルに自動振り分け",
+      "category": "ナレッジ構築・収集",
+      "group": "ナレッジ収集",
+      "business_unit": "AI活用事業部"
+    },
+    {
+      "command": "/knowledge-creator",
+      "display": "ナレッジ構築",
+      "usage": "パーソナル/プロダクト/コンテンツ ナレッジを体系的に構築",
+      "category": "ナレッジ構築・収集",
+      "group": "コンテンツ制作",
+      "business_unit": "AI活用事業部"
+    },
+    {
+      "command": "/knowledge-sync",
+      "display": "日次自動収集",
+      "usage": "X/Threads/YouTube/Plaud/Zoom/CW/Gmail等 全API横断ナレッジ収集",
+      "category": "ナレッジ構築・収集",
+      "group": "コンテンツ制作",
+      "business_unit": "AI活用事業部"
+    },
+    {
+      "command": "/morning-knowledge",
+      "display": "朝のナレッジ収集",
+      "usage": "MindMeister/Xブックマーク多段エンリッチ（毎朝）",
+      "category": "ナレッジ構築・収集",
+      "group": "ナレッジ収集",
+      "business_unit": "AI活用事業部"
+    },
+    {
+      "command": "/loom-knowledge",
+      "display": "Loomナレッジ化",
+      "usage": "Loom動画transcript→事業部別分類→Claude補正→GIF視覚解析統合",
+      "category": "録音・動画ナレッジ化",
+      "group": "ナレッジ収集",
+      "business_unit": "AI活用事業部"
+    },
+    {
+      "command": "/plaud",
+      "display": "Plaud取込",
+      "usage": "Plaud Note Pin の録音データ取得・文字起こし・ナレッジ保存",
+      "category": "録音・動画ナレッジ化",
+      "group": "ナレッジ収集",
+      "business_unit": "AI活用事業部"
+    },
+    {
+      "command": "/zoom",
+      "display": "Zoom文字起こし",
+      "usage": "Zoom録音の文字起こし・ナレッジ化",
+      "category": "録音・動画ナレッジ化",
+      "group": "ナレッジ収集",
+      "business_unit": "AI活用事業部"
+    },
+    {
+      "command": "/gdocs",
+      "display": "Googleドキュメント",
+      "usage": "Docs作成・テキスト挿入・タブ操作・ページ設定",
+      "category": "Google Workspace連携",
+      "group": "ナレッジ収集",
+      "business_unit": "AI活用事業部"
+    },
+    {
+      "command": "/google",
+      "display": "Google Workspace統合",
+      "usage": "Docs/Sheets/Slides/Drive を1スキルで統合操作",
+      "category": "Google Workspace連携",
+      "group": "コンテンツ制作",
+      "business_unit": "AI活用事業部"
+    },
+    {
+      "command": "/research",
+      "display": "汎用リサーチ",
+      "usage": "企業・アカウント・テーマ調査",
+      "category": "リサーチ",
+      "group": "ナレッジ収集",
+      "business_unit": "AI活用事業部"
+    },
+    {
+      "command": "/gear-research",
+      "display": "機材リサーチ",
+      "usage": "配信・収録機材の購入判断用横断リサーチ",
+      "category": "リサーチ",
+      "group": "ナレッジ収集",
+      "business_unit": "AI活用事業部"
+    },
+    {
+      "command": "/ads-creative",
+      "display": "広告クリエイティブ",
+      "usage": "Meta/YouTube広告のクリエイティブ一気通貫生成（D5/D4連携想定）",
+      "category": "リサーチ",
+      "group": "コンテンツ制作",
+      "business_unit": "AI活用事業部"
+    }
+  ],
+  "last_update": "2026-05-05 17:57",
   "business_units": {
     "SNS事業部": {
       "tasks": 38,
       "p0": 6,
       "open": 36,
       "md_files": 9878,
-      "skills": 24,
+      "skills": 20,
+      "content_skills": 20,
+      "skill_groups": {
+        "コンテンツ制作": 20
+      },
       "subfolders": 11,
       "counts": {
         "new": 26,
@@ -28,8 +627,14 @@
       "tasks": 53,
       "p0": 5,
       "open": 48,
-      "md_files": 2280,
-      "skills": 11,
+      "md_files": 2281,
+      "skills": 6,
+      "content_skills": 2,
+      "skill_groups": {
+        "販売・CS": 3,
+        "コンテンツ制作": 2,
+        "経営管理": 1
+      },
       "subfolders": 10,
       "counts": {
         "new": 37,
@@ -45,7 +650,13 @@
       "p0": 0,
       "open": 9,
       "md_files": 56,
-      "skills": 7,
+      "skills": 3,
+      "content_skills": 1,
+      "skill_groups": {
+        "販売・CS": 1,
+        "ナレッジ収集": 1,
+        "コンテンツ制作": 1
+      },
       "subfolders": 7,
       "counts": {
         "new": 7,
@@ -61,7 +672,13 @@
       "p0": 5,
       "open": 23,
       "md_files": 948,
-      "skills": 7,
+      "skills": 3,
+      "content_skills": 1,
+      "skill_groups": {
+        "コンテンツ制作": 1,
+        "販売・CS": 1,
+        "経営管理": 1
+      },
       "subfolders": 7,
       "counts": {
         "new": 20,
@@ -77,7 +694,14 @@
       "p0": 8,
       "open": 34,
       "md_files": 250,
-      "skills": 9,
+      "skills": 5,
+      "content_skills": 1,
+      "skill_groups": {
+        "経理・管理": 2,
+        "コンテンツ制作": 1,
+        "経営管理": 1,
+        "販売・CS": 1
+      },
       "subfolders": 11,
       "counts": {
         "new": 24,
@@ -93,7 +717,12 @@
       "p0": 3,
       "open": 19,
       "md_files": 886,
-      "skills": 17,
+      "skills": 13,
+      "content_skills": 0,
+      "skill_groups": {
+        "経営管理": 10,
+        "ナレッジ収集": 3
+      },
       "subfolders": 7,
       "counts": {
         "new": 14,
@@ -108,8 +737,15 @@
       "tasks": 34,
       "p0": 4,
       "open": 34,
-      "md_files": 942,
-      "skills": 28,
+      "md_files": 944,
+      "skills": 24,
+      "content_skills": 6,
+      "skill_groups": {
+        "ナレッジ収集": 10,
+        "自動化・改善": 7,
+        "コンテンツ制作": 6,
+        "その他": 1
+      },
       "subfolders": 8,
       "counts": {
         "new": 26,

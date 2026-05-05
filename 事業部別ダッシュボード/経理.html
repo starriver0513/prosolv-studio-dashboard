@@ -57,8 +57,13 @@
     </div>
     <div class="card kpi-card">
       <div class="kpi-label"><span>スキル</span><span class="kpi-icon">技能</span></div>
-      <div class="kpi-value">9</div>
+      <div class="kpi-value">5</div>
       <div class="kpi-sub">登録済み</div>
+    </div>
+    <div class="card kpi-card highlight">
+      <div class="kpi-label"><span>制作スキル</span><span class="kpi-icon">制作</span></div>
+      <div class="kpi-value">1</div>
+      <div class="kpi-sub">コンテンツ生成系</div>
     </div>
   </div>
 
@@ -122,7 +127,7 @@
 <div class="task-item p2"><strong>2-8. 銀行口座連携 (6gWq2gJq895GfQrV)</strong></div></div>
   </div>
 
-  <div style="display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-bottom:32px">
+  <div style="display:grid;grid-template-columns:1fr;gap:24px;margin-bottom:32px">
     <div class="card" style="padding:24px">
       <div class="section-header">
         <div>
@@ -146,18 +151,58 @@
       <div class="section-header">
         <div>
           <div class="section-eyebrow">スキル</div>
-          <h2 class="section-title">関連スキル</h2>
+          <h2 class="section-title">スキル一覧</h2>
         </div>
       </div>
-      <div class="subfolder-grid"><div class="subfolder">スキル /dashboard</div>
-<div class="subfolder">スキル /freee</div>
-<div class="subfolder">スキル /gmail</div>
-<div class="subfolder">スキル /google</div>
-<div class="subfolder">スキル /payment-monitor</div>
-<div class="subfolder">スキル /receipt</div>
-<div class="subfolder">スキル /task</div>
-<div class="subfolder">スキル /tasks</div>
-<div class="subfolder">スキル /zeiri</div></div>
+      
+      <div class="skill-summary-row"><span class="tag accent">経理・管理 2</span><span class="tag accent">コンテンツ制作 1</span><span class="tag accent">経営管理 1</span><span class="tag accent">販売・CS 1</span></div>
+      <div class="skill-card-grid">
+        <div class="skill-card">
+          <div class="skill-card-top">
+            <code>/freee</code>
+            <span>経理・管理</span>
+          </div>
+          <strong>freee API</strong>
+          <p>仕訳登録・証憑OCR・月次推移レポート・請求書発行</p>
+          <small>freee連携・仕訳</small>
+        </div>
+        <div class="skill-card">
+          <div class="skill-card-top">
+            <code>/receipt</code>
+            <span>コンテンツ制作</span>
+          </div>
+          <strong>レシートOCR</strong>
+          <p>レシート/領収書画像をGemini Vision→freee起票下書き</p>
+          <small>freee連携・仕訳</small>
+        </div>
+        <div class="skill-card">
+          <div class="skill-card-top">
+            <code>/payment-monitor</code>
+            <span>経営管理</span>
+          </div>
+          <strong>決済失敗監視</strong>
+          <p>カード停止・決済失敗・引落エラーをGmail/freee/CW横断検知→Todoist起票</p>
+          <small>決済・メール監視</small>
+        </div>
+        <div class="skill-card">
+          <div class="skill-card-top">
+            <code>/gmail</code>
+            <span>販売・CS</span>
+          </div>
+          <strong>Gmail API</strong>
+          <p>OAuth2直取りスクリプトでメール検索・本文取得・決済メール一括ダンプ</p>
+          <small>決済・メール監視</small>
+        </div>
+        <div class="skill-card">
+          <div class="skill-card-top">
+            <code>/zeiri</code>
+            <span>経理・管理</span>
+          </div>
+          <strong>法人化プロジェクト</strong>
+          <p>税理士探し・面談準備・進捗管理・シミュレーション</p>
+          <small>法人化・税務</small>
+        </div></div>
+    
     </div>
   </div>
 

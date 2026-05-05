@@ -22,11 +22,12 @@
       </div>
       <div class="header-actions">
         <span class="nav-link active">経営全体</span>
+        <a href="skills.html" class="nav-link">スキル司令室</a>
         <a href="事業部別ダッシュボード/AI活用事業部.html" class="nav-link">AI運用</a>
       </div>
     </div>
     <div class="header-meta">
-      <span>最終更新: <span style="color:var(--muted)">2026-05-05 09:35</span></span>
+      <span>最終更新: <span style="color:var(--muted)">2026-05-05 17:57</span></span>
       <span>Co-Dex × 7事業部 · <span class="highlight">静的共有</span></span>
     </div>
     
@@ -54,15 +55,20 @@
 
   <!-- KPI Cards -->
   <div class="kpi-grid" style="margin-bottom:32px">
-    <div class="card kpi-card">
-      <div class="kpi-label"><span>総タスク</span><span class="kpi-icon">全体</span></div>
-      <div class="kpi-value">228</div>
-      <div class="kpi-sub">全事業部合計</div>
+    <div class="card kpi-card highlight">
+      <div class="kpi-label"><span>総スキル</span><span class="kpi-icon">技能</span></div>
+      <div class="kpi-value">74</div>
+      <div class="kpi-sub">事業部横断の実行単位</div>
     </div>
     <div class="card kpi-card highlight">
-      <div class="kpi-label"><span>進行中</span><span class="kpi-icon">実行</span></div>
-      <div class="kpi-value">47</div>
-      <div class="kpi-sub">着手済みタスク</div>
+      <div class="kpi-label"><span>制作スキル</span><span class="kpi-icon">制作</span></div>
+      <div class="kpi-value">31</div>
+      <div class="kpi-sub">コンテンツ生成系</div>
+    </div>
+    <div class="card kpi-card">
+      <div class="kpi-label"><span>総タスク</span><span class="kpi-icon">補助</span></div>
+      <div class="kpi-value">228</div>
+      <div class="kpi-sub">スキル運用の材料</div>
     </div>
     <div class="card kpi-card">
       <div class="kpi-label"><span>未完了</span><span class="kpi-icon">未完</span></div>
@@ -76,13 +82,214 @@
     </div>
     <div class="card kpi-card">
       <div class="kpi-label"><span>総MDファイル</span><span class="kpi-icon">MD</span></div>
-      <div class="kpi-value">15,240</div>
+      <div class="kpi-value">15,243</div>
       <div class="kpi-sub">全事業部配下</div>
     </div>
-    <div class="card kpi-card">
-      <div class="kpi-label"><span>スキル</span><span class="kpi-icon">技能</span></div>
-      <div class="kpi-value">103</div>
-      <div class="kpi-sub">全事業部合計</div>
+  </div>
+
+  <div class="dashboard-band">
+    
+    <div class="skill-command-layout">
+      <div class="skill-hero-panel">
+        <div class="section-eyebrow">スキル</div>
+        <h3>スキル司令室</h3>
+        <p>タスクではなく、スキルを実務の実行単位として見ます。どの事業部に何のスキルがあり、どの制作スキルがコンテンツ化を担うかを一枚で確認できます。</p>
+        <div class="skill-hero-metrics">
+          <div><strong>74</strong><span>総スキル</span></div>
+          <div><strong>31</strong><span>制作系</span></div>
+          <div><strong>7</strong><span>分類</span></div>
+        </div>
+        <a href="skills.html" class="skill-primary-link">全スキル一覧を開く</a>
+      </div>
+      <div class="skill-groups-panel">
+        <h3>分類別</h3>
+        
+        <div class="skill-group-row">
+          <div><strong>コンテンツ制作</strong><span>31件</span></div>
+          <div class="skill-group-meter"><i style="width:41.9%"></i></div>
+        </div>
+        <div class="skill-group-row">
+          <div><strong>ナレッジ収集</strong><span>14件</span></div>
+          <div class="skill-group-meter"><i style="width:18.9%"></i></div>
+        </div>
+        <div class="skill-group-row">
+          <div><strong>経営管理</strong><span>13件</span></div>
+          <div class="skill-group-meter"><i style="width:17.6%"></i></div>
+        </div>
+        <div class="skill-group-row">
+          <div><strong>自動化・改善</strong><span>7件</span></div>
+          <div class="skill-group-meter"><i style="width:9.5%"></i></div>
+        </div>
+        <div class="skill-group-row">
+          <div><strong>販売・CS</strong><span>6件</span></div>
+          <div class="skill-group-meter"><i style="width:8.1%"></i></div>
+        </div>
+        <div class="skill-group-row">
+          <div><strong>経理・管理</strong><span>2件</span></div>
+          <div class="skill-group-meter"><i style="width:2.7%"></i></div>
+        </div>
+        <div class="skill-group-row">
+          <div><strong>その他</strong><span>1件</span></div>
+          <div class="skill-group-meter"><i style="width:1.4%"></i></div>
+        </div>
+      </div>
+      <div class="skill-bu-panel">
+        <h3>事業部別</h3>
+        
+        <a class="skill-bu-row" href="事業部別ダッシュボード/SNS事業部.html" style="--skill-bu-color:#22d3ee">
+          <span>SNS</span>
+          <strong>SNS事業部</strong>
+          <small>総スキル 20件 / 制作 20件</small>
+        </a>
+        <a class="skill-bu-row" href="事業部別ダッシュボード/プロダクト事業部.html" style="--skill-bu-color:#8b5cf6">
+          <span>PROD</span>
+          <strong>プロダクト事業部</strong>
+          <small>総スキル 6件 / 制作 2件</small>
+        </a>
+        <a class="skill-bu-row" href="事業部別ダッシュボード/セールス.html" style="--skill-bu-color:#60a5fa">
+          <span>SALES</span>
+          <strong>セールス</strong>
+          <small>総スキル 3件 / 制作 1件</small>
+        </a>
+        <a class="skill-bu-row" href="事業部別ダッシュボード/リストマーケ事業部.html" style="--skill-bu-color:#a855f7">
+          <span>LIST</span>
+          <strong>リストマーケ事業部</strong>
+          <small>総スキル 3件 / 制作 1件</small>
+        </a>
+        <a class="skill-bu-row" href="事業部別ダッシュボード/経理.html" style="--skill-bu-color:#38bdf8">
+          <span>ACCT</span>
+          <strong>経理</strong>
+          <small>総スキル 5件 / 制作 1件</small>
+        </a>
+        <a class="skill-bu-row" href="事業部別ダッシュボード/経営企画.html" style="--skill-bu-color:#d946ef">
+          <span>PLAN</span>
+          <strong>経営企画</strong>
+          <small>総スキル 13件 / 制作 0件</small>
+        </a>
+        <a class="skill-bu-row" href="事業部別ダッシュボード/AI活用事業部.html" style="--skill-bu-color:#6366f1">
+          <span>AI</span>
+          <strong>AI活用事業部</strong>
+          <small>総スキル 24件 / 制作 6件</small>
+        </a>
+      </div>
+    </div>
+    <div class="content-skill-band">
+      <div class="section-header">
+        <div>
+          <div class="section-eyebrow">制作</div>
+          <h2 class="section-title">コンテンツ作成系スキル</h2>
+        </div>
+        <span class="section-subtitle">SNS、台本、画像、スライド、セミナー制作を優先表示</span>
+      </div>
+      <div class="skill-card-grid">
+        <div class="skill-card">
+          <div class="skill-card-top">
+            <code>/x-long-post</code>
+            <span>コンテンツ制作</span>
+          </div>
+          <strong>Xロングポスト</strong>
+          <p>3,000〜25,000字のXロングポスト生成（SNS統一10ステップ）</p>
+          
+        </div>
+        <div class="skill-card">
+          <div class="skill-card-top">
+            <code>/x-article</code>
+            <span>コンテンツ制作</span>
+          </div>
+          <strong>X記事</strong>
+          <p>X Premium+ 長尺記事（目次・見出し付き 8,000〜25,000字）</p>
+          
+        </div>
+        <div class="skill-card">
+          <div class="skill-card-top">
+            <code>/x-article-writer</code>
+            <span>コンテンツ制作</span>
+          </div>
+          <strong>X記事ライター</strong>
+          <p>星川文体・構成ルール完全準拠の高品質記事生成</p>
+          
+        </div>
+        <div class="skill-card">
+          <div class="skill-card-top">
+            <code>/x-article-thumbnail</code>
+            <span>コンテンツ制作</span>
+          </div>
+          <strong>X記事サムネ</strong>
+          <p>nano-banana-pro-preview でX記事サムネ生成（3トンマナ）</p>
+          
+        </div>
+        <div class="skill-card">
+          <div class="skill-card-top">
+            <code>/x-skills</code>
+            <span>コンテンツ制作</span>
+          </div>
+          <strong>X一括生成</strong>
+          <p>リアルタイムリサーチ→候補8本→評価→Typefully予約（1日4本構成）</p>
+          
+        </div>
+        <div class="skill-card">
+          <div class="skill-card-top">
+            <code>/x-bookmarks</code>
+            <span>コンテンツ制作</span>
+          </div>
+          <strong>Xブックマーク取込</strong>
+          <p>API経由でX投稿をブックマーク収集→構造化保存（v3.1多段エンリッチ）</p>
+          
+        </div>
+        <div class="skill-card">
+          <div class="skill-card-top">
+            <code>/knowledge-x</code>
+            <span>コンテンツ制作</span>
+          </div>
+          <strong>Xナレッジ抽出</strong>
+          <p>X/Threads投稿URLから本文・スレッド・引用元・コメント抽出</p>
+          
+        </div>
+        <div class="skill-card">
+          <div class="skill-card-top">
+            <code>/threads</code>
+            <span>コンテンツ制作</span>
+          </div>
+          <strong>Threads投稿</strong>
+          <p>5モード対応（単発/教育/長文画像/スレッド/カレンダー）</p>
+          
+        </div>
+        <div class="skill-card">
+          <div class="skill-card-top">
+            <code>/youtube-research</code>
+            <span>コンテンツ制作</span>
+          </div>
+          <strong>YouTubeリサーチ</strong>
+          <p>キーワード/チャンネル/URLからベンチマーク動画分析</p>
+          
+        </div>
+        <div class="skill-card">
+          <div class="skill-card-top">
+            <code>/youtube-planning</code>
+            <span>コンテンツ制作</span>
+          </div>
+          <strong>YouTube企画</strong>
+          <p>リサーチデータから企画案・タイトル・サムネ・骨組み作成</p>
+          
+        </div>
+        <div class="skill-card">
+          <div class="skill-card-top">
+            <code>/youtube-script</code>
+            <span>コンテンツ制作</span>
+          </div>
+          <strong>YouTube台本</strong>
+          <p>企画確定後の最終台本（横動画/ショート）</p>
+          
+        </div>
+        <div class="skill-card">
+          <div class="skill-card-top">
+            <code>/instagram-feed</code>
+            <span>コンテンツ制作</span>
+          </div>
+          <strong>Instagramフィード</strong>
+          <p>カルーセル/単一画像 + キャプション生成</p>
+          
+        </div></div>
     </div>
   </div>
 
@@ -111,7 +318,7 @@
               <small>市場接点を増やし、一次情報と反応データを集める</small>
               <div class="org-node-meta">
                 <span>未完了 36件</span>
-                <span>スキル 24件</span>
+                <span>スキル 20件</span>
               </div>
             </a>
             <a class="org-node" href="事業部別ダッシュボード/リストマーケ事業部.html" style="--node-color:#a855f7">
@@ -120,7 +327,7 @@
               <small>LINE/メール/オプチャで見込み客を育成する</small>
               <div class="org-node-meta">
                 <span>未完了 23件</span>
-                <span>スキル 7件</span>
+                <span>スキル 3件</span>
               </div>
             </a></div>
         </div>
@@ -133,7 +340,7 @@
               <small>ナレッジを商品・教材・提供価値へ変換する</small>
               <div class="org-node-meta">
                 <span>未完了 48件</span>
-                <span>スキル 11件</span>
+                <span>スキル 6件</span>
               </div>
             </a>
             <a class="org-node" href="事業部別ダッシュボード/セールス.html" style="--node-color:#60a5fa">
@@ -142,7 +349,7 @@
               <small>セミナー、LP、個別相談で購買意思決定を設計する</small>
               <div class="org-node-meta">
                 <span>未完了 9件</span>
-                <span>スキル 7件</span>
+                <span>スキル 3件</span>
               </div>
             </a></div>
         </div>
@@ -155,7 +362,7 @@
               <small>売上、経費、契約、証憑を経営判断へ接続する</small>
               <div class="org-node-meta">
                 <span>未完了 34件</span>
-                <span>スキル 9件</span>
+                <span>スキル 5件</span>
               </div>
             </a>
             <a class="org-node" href="事業部別ダッシュボード/経営企画.html" style="--node-color:#d946ef">
@@ -164,7 +371,7 @@
               <small>全体戦略、KPI、事業計画、優先順位を決める</small>
               <div class="org-node-meta">
                 <span>未完了 19件</span>
-                <span>スキル 17件</span>
+                <span>スキル 13件</span>
               </div>
             </a></div>
         </div>
@@ -177,7 +384,7 @@
               <small>Codex、スキル、automation、可視化基盤を改善する</small>
               <div class="org-node-meta">
                 <span>未完了 34件</span>
-                <span>スキル 28件</span>
+                <span>スキル 24件</span>
               </div>
             </a></div>
         </div></div>
@@ -196,7 +403,7 @@
         <div class="product-card">
           <div class="product-topline">
             <span>JV講座運営</span>
-            <b>MD 389件</b>
+            <b>MD 390件</b>
           </div>
           <h3>AIマーケティング構築講座</h3>
           <p>教材 / 受講生サポート / 成果 / ナレッジ</p>
@@ -293,7 +500,7 @@
       <div class="bu-meta" style="margin-top:12px">
         <div class="bu-meta-item"><span>MD</span><span style="color:var(--muted-2)">ファイル</span><span class="meta-val">9878</span></div>
         <div class="bu-meta-item"><span>DIR</span><span style="color:var(--muted-2)">フォルダ</span><span class="meta-val">11</span></div>
-        <div class="bu-meta-item"><span>SK</span><span style="color:var(--muted-2)">スキル</span><span class="meta-val">24</span></div>
+        <div class="bu-meta-item"><span>SK</span><span style="color:var(--muted-2)">スキル</span><span class="meta-val">20</span></div>
         <div class="bu-meta-item"><span>TS</span><span style="color:var(--muted-2)">タスク</span><span class="meta-val">38</span></div>
       </div>
       <div class="bu-footer">
@@ -314,9 +521,9 @@
         <div style="margin-top:6px"><div class="bu-tags"><span class="tag accent">進行中 11</span> <span class="tag">未着手 37</span> <span class="tag success">完了 5</span></div></div>
       </div>
       <div class="bu-meta" style="margin-top:12px">
-        <div class="bu-meta-item"><span>MD</span><span style="color:var(--muted-2)">ファイル</span><span class="meta-val">2280</span></div>
+        <div class="bu-meta-item"><span>MD</span><span style="color:var(--muted-2)">ファイル</span><span class="meta-val">2281</span></div>
         <div class="bu-meta-item"><span>DIR</span><span style="color:var(--muted-2)">フォルダ</span><span class="meta-val">10</span></div>
-        <div class="bu-meta-item"><span>SK</span><span style="color:var(--muted-2)">スキル</span><span class="meta-val">11</span></div>
+        <div class="bu-meta-item"><span>SK</span><span style="color:var(--muted-2)">スキル</span><span class="meta-val">6</span></div>
         <div class="bu-meta-item"><span>TS</span><span style="color:var(--muted-2)">タスク</span><span class="meta-val">53</span></div>
       </div>
       <div class="bu-footer">
@@ -339,7 +546,7 @@
       <div class="bu-meta" style="margin-top:12px">
         <div class="bu-meta-item"><span>MD</span><span style="color:var(--muted-2)">ファイル</span><span class="meta-val">56</span></div>
         <div class="bu-meta-item"><span>DIR</span><span style="color:var(--muted-2)">フォルダ</span><span class="meta-val">7</span></div>
-        <div class="bu-meta-item"><span>SK</span><span style="color:var(--muted-2)">スキル</span><span class="meta-val">7</span></div>
+        <div class="bu-meta-item"><span>SK</span><span style="color:var(--muted-2)">スキル</span><span class="meta-val">3</span></div>
         <div class="bu-meta-item"><span>TS</span><span style="color:var(--muted-2)">タスク</span><span class="meta-val">9</span></div>
       </div>
       <div class="bu-footer">
@@ -362,7 +569,7 @@
       <div class="bu-meta" style="margin-top:12px">
         <div class="bu-meta-item"><span>MD</span><span style="color:var(--muted-2)">ファイル</span><span class="meta-val">948</span></div>
         <div class="bu-meta-item"><span>DIR</span><span style="color:var(--muted-2)">フォルダ</span><span class="meta-val">7</span></div>
-        <div class="bu-meta-item"><span>SK</span><span style="color:var(--muted-2)">スキル</span><span class="meta-val">7</span></div>
+        <div class="bu-meta-item"><span>SK</span><span style="color:var(--muted-2)">スキル</span><span class="meta-val">3</span></div>
         <div class="bu-meta-item"><span>TS</span><span style="color:var(--muted-2)">タスク</span><span class="meta-val">24</span></div>
       </div>
       <div class="bu-footer">
@@ -385,7 +592,7 @@
       <div class="bu-meta" style="margin-top:12px">
         <div class="bu-meta-item"><span>MD</span><span style="color:var(--muted-2)">ファイル</span><span class="meta-val">250</span></div>
         <div class="bu-meta-item"><span>DIR</span><span style="color:var(--muted-2)">フォルダ</span><span class="meta-val">11</span></div>
-        <div class="bu-meta-item"><span>SK</span><span style="color:var(--muted-2)">スキル</span><span class="meta-val">9</span></div>
+        <div class="bu-meta-item"><span>SK</span><span style="color:var(--muted-2)">スキル</span><span class="meta-val">5</span></div>
         <div class="bu-meta-item"><span>TS</span><span style="color:var(--muted-2)">タスク</span><span class="meta-val">50</span></div>
       </div>
       <div class="bu-footer">
@@ -408,7 +615,7 @@
       <div class="bu-meta" style="margin-top:12px">
         <div class="bu-meta-item"><span>MD</span><span style="color:var(--muted-2)">ファイル</span><span class="meta-val">886</span></div>
         <div class="bu-meta-item"><span>DIR</span><span style="color:var(--muted-2)">フォルダ</span><span class="meta-val">7</span></div>
-        <div class="bu-meta-item"><span>SK</span><span style="color:var(--muted-2)">スキル</span><span class="meta-val">17</span></div>
+        <div class="bu-meta-item"><span>SK</span><span style="color:var(--muted-2)">スキル</span><span class="meta-val">13</span></div>
         <div class="bu-meta-item"><span>TS</span><span style="color:var(--muted-2)">タスク</span><span class="meta-val">20</span></div>
       </div>
       <div class="bu-footer">
@@ -429,13 +636,13 @@
         <div style="margin-top:6px"><div class="bu-tags"><span class="tag accent">進行中 8</span> <span class="tag">未着手 26</span></div></div>
       </div>
       <div class="bu-meta" style="margin-top:12px">
-        <div class="bu-meta-item"><span>MD</span><span style="color:var(--muted-2)">ファイル</span><span class="meta-val">942</span></div>
+        <div class="bu-meta-item"><span>MD</span><span style="color:var(--muted-2)">ファイル</span><span class="meta-val">944</span></div>
         <div class="bu-meta-item"><span>DIR</span><span style="color:var(--muted-2)">フォルダ</span><span class="meta-val">8</span></div>
-        <div class="bu-meta-item"><span>SK</span><span style="color:var(--muted-2)">スキル</span><span class="meta-val">28</span></div>
+        <div class="bu-meta-item"><span>SK</span><span style="color:var(--muted-2)">スキル</span><span class="meta-val">24</span></div>
         <div class="bu-meta-item"><span>TS</span><span style="color:var(--muted-2)">タスク</span><span class="meta-val">34</span></div>
       </div>
       <div class="bu-footer">
-        <span>888.8 MB</span>
+        <span>888.9 MB</span>
       </div>
     </a>
     </div>

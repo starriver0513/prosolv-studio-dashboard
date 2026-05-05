@@ -47,8 +47,8 @@
     </div>
     <div class="card kpi-card">
       <div class="kpi-label"><span>MDファイル</span><span class="kpi-icon">MD</span></div>
-      <div class="kpi-value">942</div>
-      <div class="kpi-sub">888.8 MB</div>
+      <div class="kpi-value">944</div>
+      <div class="kpi-sub">888.9 MB</div>
     </div>
     <div class="card kpi-card">
       <div class="kpi-label"><span>フォルダ</span><span class="kpi-icon">構造</span></div>
@@ -57,8 +57,13 @@
     </div>
     <div class="card kpi-card">
       <div class="kpi-label"><span>スキル</span><span class="kpi-icon">技能</span></div>
-      <div class="kpi-value">28</div>
+      <div class="kpi-value">24</div>
       <div class="kpi-sub">登録済み</div>
+    </div>
+    <div class="card kpi-card highlight">
+      <div class="kpi-label"><span>制作スキル</span><span class="kpi-icon">制作</span></div>
+      <div class="kpi-value">6</div>
+      <div class="kpi-sub">コンテンツ生成系</div>
     </div>
   </div>
 
@@ -106,7 +111,7 @@
 <div class="task-item p2"><strong>全社AI秘書化（毎朝/毎夜の自動レポート）</strong></div></div>
   </div>
 
-  <div style="display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-bottom:32px">
+  <div style="display:grid;grid-template-columns:1fr;gap:24px;margin-bottom:32px">
     <div class="card" style="padding:24px">
       <div class="section-header">
         <div>
@@ -127,37 +132,229 @@
       <div class="section-header">
         <div>
           <div class="section-eyebrow">スキル</div>
-          <h2 class="section-title">関連スキル</h2>
+          <h2 class="section-title">スキル一覧</h2>
         </div>
       </div>
-      <div class="subfolder-grid"><div class="subfolder">スキル /FB</div>
-<div class="subfolder">スキル /ads-creative</div>
-<div class="subfolder">スキル /ai-management-evolution</div>
-<div class="subfolder">スキル /auto-skill</div>
-<div class="subfolder">スキル /capture</div>
-<div class="subfolder">スキル /codex</div>
-<div class="subfolder">スキル /daily-audit</div>
-<div class="subfolder">スキル /dashboard</div>
-<div class="subfolder">スキル /empirical-prompt-tuning</div>
-<div class="subfolder">スキル /env-bootstrap</div>
-<div class="subfolder">スキル /fb-propagate</div>
-<div class="subfolder">スキル /gdocs</div>
-<div class="subfolder">スキル /gear-research</div>
-<div class="subfolder">スキル /google</div>
-<div class="subfolder">スキル /knowledge</div>
-<div class="subfolder">スキル /knowledge-creator</div>
-<div class="subfolder">スキル /knowledge-sync</div>
-<div class="subfolder">スキル /loom-knowledge</div>
-<div class="subfolder">スキル /migrate-data</div>
-<div class="subfolder">スキル /morning</div>
-<div class="subfolder">スキル /morning-knowledge</div>
-<div class="subfolder">スキル /organize</div>
-<div class="subfolder">スキル /plaud</div>
-<div class="subfolder">スキル /research</div>
-<div class="subfolder">スキル /shutdown</div>
-<div class="subfolder">スキル /simple</div>
-<div class="subfolder">スキル /weekly-evolve</div>
-<div class="subfolder">スキル /zoom</div></div>
+      
+      <div class="skill-summary-row"><span class="tag accent">ナレッジ収集 10</span><span class="tag accent">自動化・改善 7</span><span class="tag accent">コンテンツ制作 6</span><span class="tag accent">その他 1</span></div>
+      <div class="skill-card-grid">
+        <div class="skill-card">
+          <div class="skill-card-top">
+            <code>/auto-skill</code>
+            <span>自動化・改善</span>
+          </div>
+          <strong>自動スキル化</strong>
+          <p>直前ラリーから新規スキル候補・既存拡張候補を検出→skill-creatorに委譲</p>
+          <small>スキル開発・改善</small>
+        </div>
+        <div class="skill-card">
+          <div class="skill-card-top">
+            <code>/anthropic-skills:skill-creator</code>
+            <span>自動化・改善</span>
+          </div>
+          <strong>skill-creator</strong>
+          <p>公式スキル作成ツール（対話的にSKILL.md作成・eval）</p>
+          <small>スキル開発・改善</small>
+        </div>
+        <div class="skill-card">
+          <div class="skill-card-top">
+            <code>/empirical-prompt-tuning</code>
+            <span>コンテンツ制作</span>
+          </div>
+          <strong>プロンプトチューニング</strong>
+          <p>マーケコンテンツ生成スキルを白紙subagentに叩かせ両面評価</p>
+          <small>スキル開発・改善</small>
+        </div>
+        <div class="skill-card">
+          <div class="skill-card-top">
+            <code>/FB</code>
+            <span>コンテンツ制作</span>
+          </div>
+          <strong>スキルFB改善</strong>
+          <p>台本生成系スキルへのFBを受けてプロンプト・参照ナレッジ自動改善</p>
+          <small>スキル開発・改善</small>
+        </div>
+        <div class="skill-card">
+          <div class="skill-card-top">
+            <code>/fb-propagate</code>
+            <span>ナレッジ収集</span>
+          </div>
+          <strong>FB全体適応</strong>
+          <p>1FBを関連全スキル/ナレッジ/メモリ候補に一括伝播</p>
+          <small>スキル開発・改善</small>
+        </div>
+        <div class="skill-card">
+          <div class="skill-card-top">
+            <code>/codex</code>
+            <span>自動化・改善</span>
+          </div>
+          <strong>Codex連携</strong>
+          <p>OpenAI Codex（GPT）でテキスト・コード生成</p>
+          <small>システム運用・連携</small>
+        </div>
+        <div class="skill-card">
+          <div class="skill-card-top">
+            <code>/migrate-data</code>
+            <span>自動化・改善</span>
+          </div>
+          <strong>データ移行</strong>
+          <p>既存データ移行プランを実行（大規模再編成専用）</p>
+          <small>システム運用・連携</small>
+        </div>
+        <div class="skill-card">
+          <div class="skill-card-top">
+            <code>/env-bootstrap</code>
+            <span>自動化・改善</span>
+          </div>
+          <strong>環境変数セットアップ</strong>
+          <p>APIキー・.env・認証トークンの取得/読み込み/エクスポート標準化</p>
+          <small>システム運用・連携</small>
+        </div>
+        <div class="skill-card">
+          <div class="skill-card-top">
+            <code>/ai-management-evolution</code>
+            <span>ナレッジ収集</span>
+          </div>
+          <strong>AI経営ディレクトリ改善</strong>
+          <p>事業部フォルダを1媒体・1継続タスク・1主要スキル・必要ナレッジ一式へ継続改善</p>
+          <small>システム運用・連携</small>
+        </div>
+        <div class="skill-card">
+          <div class="skill-card-top">
+            <code>/simple</code>
+            <span>その他</span>
+          </div>
+          <strong>ブレストスキル</strong>
+          <p>クリエイティブ作業や設計判断前の対話型ブレスト</p>
+          <small>ブレスト・整理</small>
+        </div>
+        <div class="skill-card">
+          <div class="skill-card-top">
+            <code>/capture</code>
+            <span>自動化・改善</span>
+          </div>
+          <strong>アイディア取込</strong>
+          <p>雑多な学び・アイディア・壁打ち・改善案を自動分類・保存</p>
+          <small>ブレスト・整理</small>
+        </div>
+        <div class="skill-card">
+          <div class="skill-card-top">
+            <code>/organize</code>
+            <span>自動化・改善</span>
+          </div>
+          <strong>毎ラリー整理</strong>
+          <p>直前セッションをAI内省→7カテゴリ判定→提案→承認→一括実行</p>
+          <small>ブレスト・整理</small>
+        </div>
+        <div class="skill-card">
+          <div class="skill-card-top">
+            <code>/knowledge</code>
+            <span>ナレッジ収集</span>
+          </div>
+          <strong>ナレッジ更新</strong>
+          <p>雑多に投げた情報を最適なナレッジファイルに自動振り分け</p>
+          <small>ナレッジ構築・収集</small>
+        </div>
+        <div class="skill-card">
+          <div class="skill-card-top">
+            <code>/knowledge-creator</code>
+            <span>コンテンツ制作</span>
+          </div>
+          <strong>ナレッジ構築</strong>
+          <p>パーソナル/プロダクト/コンテンツ ナレッジを体系的に構築</p>
+          <small>ナレッジ構築・収集</small>
+        </div>
+        <div class="skill-card">
+          <div class="skill-card-top">
+            <code>/knowledge-sync</code>
+            <span>コンテンツ制作</span>
+          </div>
+          <strong>日次自動収集</strong>
+          <p>X/Threads/YouTube/Plaud/Zoom/CW/Gmail等 全API横断ナレッジ収集</p>
+          <small>ナレッジ構築・収集</small>
+        </div>
+        <div class="skill-card">
+          <div class="skill-card-top">
+            <code>/morning-knowledge</code>
+            <span>ナレッジ収集</span>
+          </div>
+          <strong>朝のナレッジ収集</strong>
+          <p>MindMeister/Xブックマーク多段エンリッチ（毎朝）</p>
+          <small>ナレッジ構築・収集</small>
+        </div>
+        <div class="skill-card">
+          <div class="skill-card-top">
+            <code>/loom-knowledge</code>
+            <span>ナレッジ収集</span>
+          </div>
+          <strong>Loomナレッジ化</strong>
+          <p>Loom動画transcript→事業部別分類→Claude補正→GIF視覚解析統合</p>
+          <small>録音・動画ナレッジ化</small>
+        </div>
+        <div class="skill-card">
+          <div class="skill-card-top">
+            <code>/plaud</code>
+            <span>ナレッジ収集</span>
+          </div>
+          <strong>Plaud取込</strong>
+          <p>Plaud Note Pin の録音データ取得・文字起こし・ナレッジ保存</p>
+          <small>録音・動画ナレッジ化</small>
+        </div>
+        <div class="skill-card">
+          <div class="skill-card-top">
+            <code>/zoom</code>
+            <span>ナレッジ収集</span>
+          </div>
+          <strong>Zoom文字起こし</strong>
+          <p>Zoom録音の文字起こし・ナレッジ化</p>
+          <small>録音・動画ナレッジ化</small>
+        </div>
+        <div class="skill-card">
+          <div class="skill-card-top">
+            <code>/gdocs</code>
+            <span>ナレッジ収集</span>
+          </div>
+          <strong>Googleドキュメント</strong>
+          <p>Docs作成・テキスト挿入・タブ操作・ページ設定</p>
+          <small>Google Workspace連携</small>
+        </div>
+        <div class="skill-card">
+          <div class="skill-card-top">
+            <code>/google</code>
+            <span>コンテンツ制作</span>
+          </div>
+          <strong>Google Workspace統合</strong>
+          <p>Docs/Sheets/Slides/Drive を1スキルで統合操作</p>
+          <small>Google Workspace連携</small>
+        </div>
+        <div class="skill-card">
+          <div class="skill-card-top">
+            <code>/research</code>
+            <span>ナレッジ収集</span>
+          </div>
+          <strong>汎用リサーチ</strong>
+          <p>企業・アカウント・テーマ調査</p>
+          <small>リサーチ</small>
+        </div>
+        <div class="skill-card">
+          <div class="skill-card-top">
+            <code>/gear-research</code>
+            <span>ナレッジ収集</span>
+          </div>
+          <strong>機材リサーチ</strong>
+          <p>配信・収録機材の購入判断用横断リサーチ</p>
+          <small>リサーチ</small>
+        </div>
+        <div class="skill-card">
+          <div class="skill-card-top">
+            <code>/ads-creative</code>
+            <span>コンテンツ制作</span>
+          </div>
+          <strong>広告クリエイティブ</strong>
+          <p>Meta/YouTube広告のクリエイティブ一気通貫生成（D5/D4連携想定）</p>
+          <small>リサーチ</small>
+        </div></div>
+    
     </div>
   </div>
 

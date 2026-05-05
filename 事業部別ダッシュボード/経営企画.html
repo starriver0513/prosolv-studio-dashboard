@@ -57,8 +57,13 @@
     </div>
     <div class="card kpi-card">
       <div class="kpi-label"><span>スキル</span><span class="kpi-icon">技能</span></div>
-      <div class="kpi-value">17</div>
+      <div class="kpi-value">13</div>
       <div class="kpi-sub">登録済み</div>
+    </div>
+    <div class="card kpi-card highlight">
+      <div class="kpi-label"><span>制作スキル</span><span class="kpi-icon">制作</span></div>
+      <div class="kpi-value">0</div>
+      <div class="kpi-sub">コンテンツ生成系</div>
     </div>
   </div>
 
@@ -92,7 +97,7 @@
 <div class="task-section task-section-done"><h3>完了済み（1件）</h3><div class="task-item p2 done"><strong>THE・directlyページ配信 → リストマーケ事業部の完了欄へ移動 (ID: 6gW48w44VxVrr8jX)</strong></div></div>
   </div>
 
-  <div style="display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-bottom:32px">
+  <div style="display:grid;grid-template-columns:1fr;gap:24px;margin-bottom:32px">
     <div class="card" style="padding:24px">
       <div class="section-header">
         <div>
@@ -112,26 +117,130 @@
       <div class="section-header">
         <div>
           <div class="section-eyebrow">スキル</div>
-          <h2 class="section-title">関連スキル</h2>
+          <h2 class="section-title">スキル一覧</h2>
         </div>
       </div>
-      <div class="subfolder-grid"><div class="subfolder">スキル /analyze</div>
-<div class="subfolder">スキル /daily-audit</div>
-<div class="subfolder">スキル /dashboard</div>
-<div class="subfolder">スキル /freee</div>
-<div class="subfolder">スキル /knowledge-sync</div>
-<div class="subfolder">スキル /morning</div>
-<div class="subfolder">スキル /morning-knowledge</div>
-<div class="subfolder">スキル /receipt</div>
-<div class="subfolder">スキル /schedule</div>
-<div class="subfolder">スキル /shutdown</div>
-<div class="subfolder">スキル /sync</div>
-<div class="subfolder">スキル /task</div>
-<div class="subfolder">スキル /task-enrich</div>
-<div class="subfolder">スキル /tasks</div>
-<div class="subfolder">スキル /todoist</div>
-<div class="subfolder">スキル /todoist-api</div>
-<div class="subfolder">スキル /weekly-evolve</div></div>
+      
+      <div class="skill-summary-row"><span class="tag accent">経営管理 10</span><span class="tag accent">ナレッジ収集 3</span></div>
+      <div class="skill-card-grid">
+        <div class="skill-card">
+          <div class="skill-card-top">
+            <code>/morning</code>
+            <span>経営管理</span>
+          </div>
+          <strong>朝のダッシュボード</strong>
+          <p>D8オーケストレーター版（D1〜D8アラート/KPI/フォーカス/Gmailトリアージ）</p>
+          <small>日次・週次ルーティン</small>
+        </div>
+        <div class="skill-card">
+          <div class="skill-card-top">
+            <code>/shutdown</code>
+            <span>経営管理</span>
+          </div>
+          <strong>終業処理</strong>
+          <p>日次レポート・current-projects.md更新・D1〜D8サマリー生成</p>
+          <small>日次・週次ルーティン</small>
+        </div>
+        <div class="skill-card">
+          <div class="skill-card-top">
+            <code>/daily-audit</code>
+            <span>ナレッジ収集</span>
+          </div>
+          <strong>日次監査</strong>
+          <p>全要件チェック→自動修正→新規ナレッジ取得（毎日12:00自動）</p>
+          <small>日次・週次ルーティン</small>
+        </div>
+        <div class="skill-card">
+          <div class="skill-card-top">
+            <code>/weekly-evolve</code>
+            <span>経営管理</span>
+          </div>
+          <strong>週次棚卸し</strong>
+          <p>過去7日のラリー/学び/アイディア/改善キューをメタ分析（毎週日曜12:00）</p>
+          <small>日次・週次ルーティン</small>
+        </div>
+        <div class="skill-card">
+          <div class="skill-card-top">
+            <code>/dashboard</code>
+            <span>経営管理</span>
+          </div>
+          <strong>経営ダッシュボード</strong>
+          <p>Prosolv Studio経営ダッシュボード起動・更新（http://localhost:3100）</p>
+          <small>ダッシュボード・データ分析</small>
+        </div>
+        <div class="skill-card">
+          <div class="skill-card-top">
+            <code>/analyze</code>
+            <span>経営管理</span>
+          </div>
+          <strong>データ分析</strong>
+          <p>CSV/SNS数値/競合分析</p>
+          <small>ダッシュボード・データ分析</small>
+        </div>
+        <div class="skill-card">
+          <div class="skill-card-top">
+            <code>/task</code>
+            <span>経営管理</span>
+          </div>
+          <strong>タスク管理（v1）</strong>
+          <p>Todoist+CW+引き継ぎを統合した番号付きリスト表示</p>
+          <small>タスク管理（ローカル+Todoist連携）</small>
+        </div>
+        <div class="skill-card">
+          <div class="skill-card-top">
+            <code>/tasks</code>
+            <span>経営管理</span>
+          </div>
+          <strong>タスク管理（v2）</strong>
+          <p>ローカルファースト/事業部横断/自動実行/承認処理</p>
+          <small>タスク管理（ローカル+Todoist連携）</small>
+        </div>
+        <div class="skill-card">
+          <div class="skill-card-top">
+            <code>/task-enrich</code>
+            <span>経営管理</span>
+          </div>
+          <strong>Todoistエンリッチ</strong>
+          <p>素のタスクをプレイブック型即実行可能タスクに自動最適化</p>
+          <small>タスク管理（ローカル+Todoist連携）</small>
+        </div>
+        <div class="skill-card">
+          <div class="skill-card-top">
+            <code>/todoist</code>
+            <span>経営管理</span>
+          </div>
+          <strong>Todoist操作</strong>
+          <p>タスク追加・完了・一覧・更新・削除・全体最適化</p>
+          <small>タスク管理（ローカル+Todoist連携）</small>
+        </div>
+        <div class="skill-card">
+          <div class="skill-card-top">
+            <code>/todoist-api</code>
+            <span>経営管理</span>
+          </div>
+          <strong>Todoist API</strong>
+          <p>Todoist API直叩きでタスク・プロジェクト・ラベル管理</p>
+          <small>タスク管理（ローカル+Todoist連携）</small>
+        </div>
+        <div class="skill-card">
+          <div class="skill-card-top">
+            <code>/schedule</code>
+            <span>ナレッジ収集</span>
+          </div>
+          <strong>スケジュール</strong>
+          <p>Googleカレンダー連携で予定確認・追加・空き時間検索</p>
+          <small>タスク管理（ローカル+Todoist連携）</small>
+        </div>
+        <div class="skill-card">
+          <div class="skill-card-top">
+            <code>/sync</code>
+            <span>ナレッジ収集</span>
+          </div>
+          <strong>ワークスペース同期</strong>
+          <p>ローカル/クラウドの同期処理</p>
+          <small>ワークスペース同期</small>
+        </div></div>
+    
     </div>
   </div>
 

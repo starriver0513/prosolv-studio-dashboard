@@ -1,0 +1,824 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>スキル司令室 | Prosolv Studio</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+<header>
+  <div class="grid-pattern"></div>
+  <div class="hero-light"></div>
+  <div class="header-inner">
+    <div class="header-top">
+      <div class="brand">
+        <div class="brand-icon">SK</div>
+        <div class="brand-text">
+          <span class="brand-sub">Prosolv Studio スキル管理</span>
+          <h1>スキル<span class="accent">司令室</span></h1>
+        </div>
+      </div>
+      <div class="header-actions">
+        <a href="index.html" class="nav-link">経営全体</a>
+        <span class="nav-link active">スキル一覧</span>
+      </div>
+    </div>
+    <div class="header-meta">
+      <span>最終更新: <span style="color:var(--muted)">2026-05-05 17:57</span></span>
+      <span>タスクよりスキルを実行単位にする</span>
+    </div>
+  </div>
+</header>
+
+<div class="container">
+  <div class="kpi-grid" style="margin-bottom:32px">
+    <div class="card kpi-card highlight">
+      <div class="kpi-label"><span>総スキル</span><span class="kpi-icon">技能</span></div>
+      <div class="kpi-value">74</div>
+      <div class="kpi-sub">事業部横断</div>
+    </div>
+    
+        <div class="card kpi-card">
+          <div class="kpi-label"><span>コンテンツ制作</span><span class="kpi-icon">分類</span></div>
+          <div class="kpi-value">31</div>
+          <div class="kpi-sub">登録スキル</div>
+        </div>
+        <div class="card kpi-card">
+          <div class="kpi-label"><span>ナレッジ収集</span><span class="kpi-icon">分類</span></div>
+          <div class="kpi-value">14</div>
+          <div class="kpi-sub">登録スキル</div>
+        </div>
+        <div class="card kpi-card">
+          <div class="kpi-label"><span>経営管理</span><span class="kpi-icon">分類</span></div>
+          <div class="kpi-value">13</div>
+          <div class="kpi-sub">登録スキル</div>
+        </div>
+        <div class="card kpi-card">
+          <div class="kpi-label"><span>自動化・改善</span><span class="kpi-icon">分類</span></div>
+          <div class="kpi-value">7</div>
+          <div class="kpi-sub">登録スキル</div>
+        </div>
+        <div class="card kpi-card">
+          <div class="kpi-label"><span>販売・CS</span><span class="kpi-icon">分類</span></div>
+          <div class="kpi-value">6</div>
+          <div class="kpi-sub">登録スキル</div>
+        </div>
+        <div class="card kpi-card">
+          <div class="kpi-label"><span>経理・管理</span><span class="kpi-icon">分類</span></div>
+          <div class="kpi-value">2</div>
+          <div class="kpi-sub">登録スキル</div>
+        </div>
+        <div class="card kpi-card">
+          <div class="kpi-label"><span>その他</span><span class="kpi-icon">分類</span></div>
+          <div class="kpi-value">1</div>
+          <div class="kpi-sub">登録スキル</div>
+        </div>
+  </div>
+  
+        <section class="skill-bu-section" style="--skill-bu-color:#22d3ee">
+          <div class="section-header">
+            <div>
+              <div class="section-eyebrow">事業部</div>
+              <h2 class="section-title">SNS事業部</h2>
+            </div>
+            <span class="section-subtitle">総スキル 20件 / 制作系 20件</span>
+          </div>
+          <div class="skill-card-grid">
+        <div class="skill-card">
+          <div class="skill-card-top">
+            <code>/x-long-post</code>
+            <span>コンテンツ制作</span>
+          </div>
+          <strong>Xロングポスト</strong>
+          <p>3,000〜25,000字のXロングポスト生成（SNS統一10ステップ）</p>
+          <small>X (Twitter)</small>
+        </div>
+        <div class="skill-card">
+          <div class="skill-card-top">
+            <code>/x-article</code>
+            <span>コンテンツ制作</span>
+          </div>
+          <strong>X記事</strong>
+          <p>X Premium+ 長尺記事（目次・見出し付き 8,000〜25,000字）</p>
+          <small>X (Twitter)</small>
+        </div>
+        <div class="skill-card">
+          <div class="skill-card-top">
+            <code>/x-article-writer</code>
+            <span>コンテンツ制作</span>
+          </div>
+          <strong>X記事ライター</strong>
+          <p>星川文体・構成ルール完全準拠の高品質記事生成</p>
+          <small>X (Twitter)</small>
+        </div>
+        <div class="skill-card">
+          <div class="skill-card-top">
+            <code>/x-article-thumbnail</code>
+            <span>コンテンツ制作</span>
+          </div>
+          <strong>X記事サムネ</strong>
+          <p>nano-banana-pro-preview でX記事サムネ生成（3トンマナ）</p>
+          <small>X (Twitter)</small>
+        </div>
+        <div class="skill-card">
+          <div class="skill-card-top">
+            <code>/x-skills</code>
+            <span>コンテンツ制作</span>
+          </div>
+          <strong>X一括生成</strong>
+          <p>リアルタイムリサーチ→候補8本→評価→Typefully予約（1日4本構成）</p>
+          <small>X (Twitter)</small>
+        </div>
+        <div class="skill-card">
+          <div class="skill-card-top">
+            <code>/x-bookmarks</code>
+            <span>コンテンツ制作</span>
+          </div>
+          <strong>Xブックマーク取込</strong>
+          <p>API経由でX投稿をブックマーク収集→構造化保存（v3.1多段エンリッチ）</p>
+          <small>X (Twitter)</small>
+        </div>
+        <div class="skill-card">
+          <div class="skill-card-top">
+            <code>/knowledge-x</code>
+            <span>コンテンツ制作</span>
+          </div>
+          <strong>Xナレッジ抽出</strong>
+          <p>X/Threads投稿URLから本文・スレッド・引用元・コメント抽出</p>
+          <small>X (Twitter)</small>
+        </div>
+        <div class="skill-card">
+          <div class="skill-card-top">
+            <code>/threads</code>
+            <span>コンテンツ制作</span>
+          </div>
+          <strong>Threads投稿</strong>
+          <p>5モード対応（単発/教育/長文画像/スレッド/カレンダー）</p>
+          <small>Threads</small>
+        </div>
+        <div class="skill-card">
+          <div class="skill-card-top">
+            <code>/youtube-research</code>
+            <span>コンテンツ制作</span>
+          </div>
+          <strong>YouTubeリサーチ</strong>
+          <p>キーワード/チャンネル/URLからベンチマーク動画分析</p>
+          <small>YouTube</small>
+        </div>
+        <div class="skill-card">
+          <div class="skill-card-top">
+            <code>/youtube-planning</code>
+            <span>コンテンツ制作</span>
+          </div>
+          <strong>YouTube企画</strong>
+          <p>リサーチデータから企画案・タイトル・サムネ・骨組み作成</p>
+          <small>YouTube</small>
+        </div>
+        <div class="skill-card">
+          <div class="skill-card-top">
+            <code>/youtube-script</code>
+            <span>コンテンツ制作</span>
+          </div>
+          <strong>YouTube台本</strong>
+          <p>企画確定後の最終台本（横動画/ショート）</p>
+          <small>YouTube</small>
+        </div>
+        <div class="skill-card">
+          <div class="skill-card-top">
+            <code>/instagram-feed</code>
+            <span>コンテンツ制作</span>
+          </div>
+          <strong>Instagramフィード</strong>
+          <p>カルーセル/単一画像 + キャプション生成</p>
+          <small>Instagram</small>
+        </div>
+        <div class="skill-card">
+          <div class="skill-card-top">
+            <code>/instagram-reel</code>
+            <span>コンテンツ制作</span>
+          </div>
+          <strong>Instagramリール</strong>
+          <p>縦型ショート動画15〜90秒台本（星川/受講生モード）</p>
+          <small>Instagram</small>
+        </div>
+        <div class="skill-card">
+          <div class="skill-card-top">
+            <code>/instagram-stories</code>
+            <span>コンテンツ制作</span>
+          </div>
+          <strong>Instagramストーリーズ</strong>
+          <p>24時間限定3〜4枚台本（3大施策対応）</p>
+          <small>Instagram</small>
+        </div>
+        <div class="skill-card">
+          <div class="skill-card-top">
+            <code>/ig-reel-research</code>
+            <span>コンテンツ制作</span>
+          </div>
+          <strong>リールリサーチ</strong>
+          <p>キーワード→Apify→品質ゲート→xAI Grok STT解析</p>
+          <small>Instagram</small>
+        </div>
+        <div class="skill-card">
+          <div class="skill-card-top">
+            <code>/nanobanana</code>
+            <span>コンテンツ制作</span>
+          </div>
+          <strong>画像生成</strong>
+          <p>Gemini APIでビジュアルスライド図解画像を一発生成</p>
+          <small>画像・スライド</small>
+        </div>
+        <div class="skill-card">
+          <div class="skill-card-top">
+            <code>/image</code>
+            <span>コンテンツ制作</span>
+          </div>
+          <strong>汎用画像</strong>
+          <p>gpt-image-2でサムネ・バナー・OGP・キービジュアル生成（14スタイル）</p>
+          <small>画像・スライド</small>
+        </div>
+        <div class="skill-card">
+          <div class="skill-card-top">
+            <code>/slide</code>
+            <span>コンテンツ制作</span>
+          </div>
+          <strong>スライド生成</strong>
+          <p>14コアレイアウト×27図解パターンでセミナースライド生成</p>
+          <small>画像・スライド</small>
+        </div>
+        <div class="skill-card">
+          <div class="skill-card-top">
+            <code>/taidan-sheet-inserter</code>
+            <span>コンテンツ制作</span>
+          </div>
+          <strong>対談シート挿入</strong>
+          <p>対談スプシへの行追加・更新</p>
+          <small>対談・特殊系</small>
+        </div>
+        <div class="skill-card">
+          <div class="skill-card-top">
+            <code>/taidan-video-title</code>
+            <span>コンテンツ制作</span>
+          </div>
+          <strong>対談動画タイトル</strong>
+          <p>対談動画のタイトル生成</p>
+          <small>対談・特殊系</small>
+        </div></div>
+        </section>
+        <section class="skill-bu-section" style="--skill-bu-color:#8b5cf6">
+          <div class="section-header">
+            <div>
+              <div class="section-eyebrow">事業部</div>
+              <h2 class="section-title">プロダクト事業部</h2>
+            </div>
+            <span class="section-subtitle">総スキル 6件 / 制作系 2件</span>
+          </div>
+          <div class="skill-card-grid">
+        <div class="skill-card">
+          <div class="skill-card-top">
+            <code>/chatwork</code>
+            <span>経営管理</span>
+          </div>
+          <strong>Chatwork操作</strong>
+          <p>API経由でメッセージ閲覧・送信・予約・タスク管理</p>
+          <small>Chatwork配信・連携</small>
+        </div>
+        <div class="skill-card">
+          <div class="skill-card-top">
+            <code>/chatwork-delivery</code>
+            <span>販売・CS</span>
+          </div>
+          <strong>Chatwork全体配信</strong>
+          <p>AIマーケ講座の全体配信文を星川文体で自動生成</p>
+          <small>Chatwork配信・連携</small>
+        </div>
+        <div class="skill-card">
+          <div class="skill-card-top">
+            <code>/cs-inbox</code>
+            <span>販売・CS</span>
+          </div>
+          <strong>CS未返信巡回</strong>
+          <p>Chatwork未返信を一括巡回トリアージ（D6 CS）</p>
+          <small>CS・受講生対応</small>
+        </div>
+        <div class="skill-card">
+          <div class="skill-card-top">
+            <code>/shitumonn</code>
+            <span>販売・CS</span>
+          </div>
+          <strong>受講生質問対応</strong>
+          <p>質問チャットの質問確認→星川文体回答→送信</p>
+          <small>CS・受講生対応</small>
+        </div>
+        <div class="skill-card">
+          <div class="skill-card-top">
+            <code>/seminar-archive-html</code>
+            <span>コンテンツ制作</span>
+          </div>
+          <strong>セミナーアーカイブHTML</strong>
+          <p>UTAGE埋込用アーカイブHTML（Part1/Part2分割）</p>
+          <small>セミナー・コンテンツ</small>
+        </div>
+        <div class="skill-card">
+          <div class="skill-card-top">
+            <code>/qa-update</code>
+            <span>コンテンツ制作</span>
+          </div>
+          <strong>NotebookLM Q&amp;A更新</strong>
+          <p>AIマーケ講座Q&amp;Aボットのナレッジ更新</p>
+          <small>セミナー・コンテンツ</small>
+        </div></div>
+        </section>
+        <section class="skill-bu-section" style="--skill-bu-color:#60a5fa">
+          <div class="section-header">
+            <div>
+              <div class="section-eyebrow">事業部</div>
+              <h2 class="section-title">セールス</h2>
+            </div>
+            <span class="section-subtitle">総スキル 3件 / 制作系 1件</span>
+          </div>
+          <div class="skill-card-grid">
+        <div class="skill-card">
+          <div class="skill-card-top">
+            <code>/utage</code>
+            <span>販売・CS</span>
+          </div>
+          <strong>UTAGE API</strong>
+          <p>ファネル・ステップ・ページ・配信アカウント・シナリオ管理</p>
+          <small>UTAGE（LP・配信プラットフォーム）</small>
+        </div>
+        <div class="skill-card">
+          <div class="skill-card-top">
+            <code>/utage-html</code>
+            <span>ナレッジ収集</span>
+          </div>
+          <strong>UTAGE HTML</strong>
+          <p>紫グラデ×ピンクのカスタムHTML生成（Drive動画埋込含む）</p>
+          <small>UTAGE（LP・配信プラットフォーム）</small>
+        </div>
+        <div class="skill-card">
+          <div class="skill-card-top">
+            <code>/slide</code>
+            <span>コンテンツ制作</span>
+          </div>
+          <strong>セミナースライド</strong>
+          <p>14コアレイアウト×27図解パターン（SNS事業部と共有）</p>
+          <small>セミナースライド</small>
+        </div></div>
+        </section>
+        <section class="skill-bu-section" style="--skill-bu-color:#a855f7">
+          <div class="section-header">
+            <div>
+              <div class="section-eyebrow">事業部</div>
+              <h2 class="section-title">リストマーケ事業部</h2>
+            </div>
+            <span class="section-subtitle">総スキル 3件 / 制作系 1件</span>
+          </div>
+          <div class="skill-card-grid">
+        <div class="skill-card">
+          <div class="skill-card-top">
+            <code>/campaign</code>
+            <span>コンテンツ制作</span>
+          </div>
+          <strong>コンテンツカレンダー</strong>
+          <p>1週間〜1ヶ月の投稿計画をテーマ・フック付きで生成</p>
+          <small>コンテンツカレンダー・配信計画</small>
+        </div>
+        <div class="skill-card">
+          <div class="skill-card-top">
+            <code>/line-intake</code>
+            <span>販売・CS</span>
+          </div>
+          <strong>LINEトーク取込</strong>
+          <p>📦LINEトーク保存倉庫の.txt自動分類→CS抽出→ローンチ配信パターン抽出</p>
+          <small>LINE・オープンチャット運用</small>
+        </div>
+        <div class="skill-card">
+          <div class="skill-card-top">
+            <code>/comm-self-audit</code>
+            <span>経営管理</span>
+          </div>
+          <strong>LINE/CW自己監査</strong>
+          <p>LINE/CW/iMessage横断分析→未返信・FAQ化候補可視化</p>
+          <small>LINE・オープンチャット運用</small>
+        </div></div>
+        </section>
+        <section class="skill-bu-section" style="--skill-bu-color:#38bdf8">
+          <div class="section-header">
+            <div>
+              <div class="section-eyebrow">事業部</div>
+              <h2 class="section-title">経理</h2>
+            </div>
+            <span class="section-subtitle">総スキル 5件 / 制作系 1件</span>
+          </div>
+          <div class="skill-card-grid">
+        <div class="skill-card">
+          <div class="skill-card-top">
+            <code>/freee</code>
+            <span>経理・管理</span>
+          </div>
+          <strong>freee API</strong>
+          <p>仕訳登録・証憑OCR・月次推移レポート・請求書発行</p>
+          <small>freee連携・仕訳</small>
+        </div>
+        <div class="skill-card">
+          <div class="skill-card-top">
+            <code>/receipt</code>
+            <span>コンテンツ制作</span>
+          </div>
+          <strong>レシートOCR</strong>
+          <p>レシート/領収書画像をGemini Vision→freee起票下書き</p>
+          <small>freee連携・仕訳</small>
+        </div>
+        <div class="skill-card">
+          <div class="skill-card-top">
+            <code>/payment-monitor</code>
+            <span>経営管理</span>
+          </div>
+          <strong>決済失敗監視</strong>
+          <p>カード停止・決済失敗・引落エラーをGmail/freee/CW横断検知→Todoist起票</p>
+          <small>決済・メール監視</small>
+        </div>
+        <div class="skill-card">
+          <div class="skill-card-top">
+            <code>/gmail</code>
+            <span>販売・CS</span>
+          </div>
+          <strong>Gmail API</strong>
+          <p>OAuth2直取りスクリプトでメール検索・本文取得・決済メール一括ダンプ</p>
+          <small>決済・メール監視</small>
+        </div>
+        <div class="skill-card">
+          <div class="skill-card-top">
+            <code>/zeiri</code>
+            <span>経理・管理</span>
+          </div>
+          <strong>法人化プロジェクト</strong>
+          <p>税理士探し・面談準備・進捗管理・シミュレーション</p>
+          <small>法人化・税務</small>
+        </div></div>
+        </section>
+        <section class="skill-bu-section" style="--skill-bu-color:#d946ef">
+          <div class="section-header">
+            <div>
+              <div class="section-eyebrow">事業部</div>
+              <h2 class="section-title">経営企画</h2>
+            </div>
+            <span class="section-subtitle">総スキル 13件 / 制作系 0件</span>
+          </div>
+          <div class="skill-card-grid">
+        <div class="skill-card">
+          <div class="skill-card-top">
+            <code>/morning</code>
+            <span>経営管理</span>
+          </div>
+          <strong>朝のダッシュボード</strong>
+          <p>D8オーケストレーター版（D1〜D8アラート/KPI/フォーカス/Gmailトリアージ）</p>
+          <small>日次・週次ルーティン</small>
+        </div>
+        <div class="skill-card">
+          <div class="skill-card-top">
+            <code>/shutdown</code>
+            <span>経営管理</span>
+          </div>
+          <strong>終業処理</strong>
+          <p>日次レポート・current-projects.md更新・D1〜D8サマリー生成</p>
+          <small>日次・週次ルーティン</small>
+        </div>
+        <div class="skill-card">
+          <div class="skill-card-top">
+            <code>/daily-audit</code>
+            <span>ナレッジ収集</span>
+          </div>
+          <strong>日次監査</strong>
+          <p>全要件チェック→自動修正→新規ナレッジ取得（毎日12:00自動）</p>
+          <small>日次・週次ルーティン</small>
+        </div>
+        <div class="skill-card">
+          <div class="skill-card-top">
+            <code>/weekly-evolve</code>
+            <span>経営管理</span>
+          </div>
+          <strong>週次棚卸し</strong>
+          <p>過去7日のラリー/学び/アイディア/改善キューをメタ分析（毎週日曜12:00）</p>
+          <small>日次・週次ルーティン</small>
+        </div>
+        <div class="skill-card">
+          <div class="skill-card-top">
+            <code>/dashboard</code>
+            <span>経営管理</span>
+          </div>
+          <strong>経営ダッシュボード</strong>
+          <p>Prosolv Studio経営ダッシュボード起動・更新（http://localhost:3100）</p>
+          <small>ダッシュボード・データ分析</small>
+        </div>
+        <div class="skill-card">
+          <div class="skill-card-top">
+            <code>/analyze</code>
+            <span>経営管理</span>
+          </div>
+          <strong>データ分析</strong>
+          <p>CSV/SNS数値/競合分析</p>
+          <small>ダッシュボード・データ分析</small>
+        </div>
+        <div class="skill-card">
+          <div class="skill-card-top">
+            <code>/task</code>
+            <span>経営管理</span>
+          </div>
+          <strong>タスク管理（v1）</strong>
+          <p>Todoist+CW+引き継ぎを統合した番号付きリスト表示</p>
+          <small>タスク管理（ローカル+Todoist連携）</small>
+        </div>
+        <div class="skill-card">
+          <div class="skill-card-top">
+            <code>/tasks</code>
+            <span>経営管理</span>
+          </div>
+          <strong>タスク管理（v2）</strong>
+          <p>ローカルファースト/事業部横断/自動実行/承認処理</p>
+          <small>タスク管理（ローカル+Todoist連携）</small>
+        </div>
+        <div class="skill-card">
+          <div class="skill-card-top">
+            <code>/task-enrich</code>
+            <span>経営管理</span>
+          </div>
+          <strong>Todoistエンリッチ</strong>
+          <p>素のタスクをプレイブック型即実行可能タスクに自動最適化</p>
+          <small>タスク管理（ローカル+Todoist連携）</small>
+        </div>
+        <div class="skill-card">
+          <div class="skill-card-top">
+            <code>/todoist</code>
+            <span>経営管理</span>
+          </div>
+          <strong>Todoist操作</strong>
+          <p>タスク追加・完了・一覧・更新・削除・全体最適化</p>
+          <small>タスク管理（ローカル+Todoist連携）</small>
+        </div>
+        <div class="skill-card">
+          <div class="skill-card-top">
+            <code>/todoist-api</code>
+            <span>経営管理</span>
+          </div>
+          <strong>Todoist API</strong>
+          <p>Todoist API直叩きでタスク・プロジェクト・ラベル管理</p>
+          <small>タスク管理（ローカル+Todoist連携）</small>
+        </div>
+        <div class="skill-card">
+          <div class="skill-card-top">
+            <code>/schedule</code>
+            <span>ナレッジ収集</span>
+          </div>
+          <strong>スケジュール</strong>
+          <p>Googleカレンダー連携で予定確認・追加・空き時間検索</p>
+          <small>タスク管理（ローカル+Todoist連携）</small>
+        </div>
+        <div class="skill-card">
+          <div class="skill-card-top">
+            <code>/sync</code>
+            <span>ナレッジ収集</span>
+          </div>
+          <strong>ワークスペース同期</strong>
+          <p>ローカル/クラウドの同期処理</p>
+          <small>ワークスペース同期</small>
+        </div></div>
+        </section>
+        <section class="skill-bu-section" style="--skill-bu-color:#6366f1">
+          <div class="section-header">
+            <div>
+              <div class="section-eyebrow">事業部</div>
+              <h2 class="section-title">AI活用事業部</h2>
+            </div>
+            <span class="section-subtitle">総スキル 24件 / 制作系 6件</span>
+          </div>
+          <div class="skill-card-grid">
+        <div class="skill-card">
+          <div class="skill-card-top">
+            <code>/auto-skill</code>
+            <span>自動化・改善</span>
+          </div>
+          <strong>自動スキル化</strong>
+          <p>直前ラリーから新規スキル候補・既存拡張候補を検出→skill-creatorに委譲</p>
+          <small>スキル開発・改善</small>
+        </div>
+        <div class="skill-card">
+          <div class="skill-card-top">
+            <code>/anthropic-skills:skill-creator</code>
+            <span>自動化・改善</span>
+          </div>
+          <strong>skill-creator</strong>
+          <p>公式スキル作成ツール（対話的にSKILL.md作成・eval）</p>
+          <small>スキル開発・改善</small>
+        </div>
+        <div class="skill-card">
+          <div class="skill-card-top">
+            <code>/empirical-prompt-tuning</code>
+            <span>コンテンツ制作</span>
+          </div>
+          <strong>プロンプトチューニング</strong>
+          <p>マーケコンテンツ生成スキルを白紙subagentに叩かせ両面評価</p>
+          <small>スキル開発・改善</small>
+        </div>
+        <div class="skill-card">
+          <div class="skill-card-top">
+            <code>/FB</code>
+            <span>コンテンツ制作</span>
+          </div>
+          <strong>スキルFB改善</strong>
+          <p>台本生成系スキルへのFBを受けてプロンプト・参照ナレッジ自動改善</p>
+          <small>スキル開発・改善</small>
+        </div>
+        <div class="skill-card">
+          <div class="skill-card-top">
+            <code>/fb-propagate</code>
+            <span>ナレッジ収集</span>
+          </div>
+          <strong>FB全体適応</strong>
+          <p>1FBを関連全スキル/ナレッジ/メモリ候補に一括伝播</p>
+          <small>スキル開発・改善</small>
+        </div>
+        <div class="skill-card">
+          <div class="skill-card-top">
+            <code>/codex</code>
+            <span>自動化・改善</span>
+          </div>
+          <strong>Codex連携</strong>
+          <p>OpenAI Codex（GPT）でテキスト・コード生成</p>
+          <small>システム運用・連携</small>
+        </div>
+        <div class="skill-card">
+          <div class="skill-card-top">
+            <code>/migrate-data</code>
+            <span>自動化・改善</span>
+          </div>
+          <strong>データ移行</strong>
+          <p>既存データ移行プランを実行（大規模再編成専用）</p>
+          <small>システム運用・連携</small>
+        </div>
+        <div class="skill-card">
+          <div class="skill-card-top">
+            <code>/env-bootstrap</code>
+            <span>自動化・改善</span>
+          </div>
+          <strong>環境変数セットアップ</strong>
+          <p>APIキー・.env・認証トークンの取得/読み込み/エクスポート標準化</p>
+          <small>システム運用・連携</small>
+        </div>
+        <div class="skill-card">
+          <div class="skill-card-top">
+            <code>/ai-management-evolution</code>
+            <span>ナレッジ収集</span>
+          </div>
+          <strong>AI経営ディレクトリ改善</strong>
+          <p>事業部フォルダを1媒体・1継続タスク・1主要スキル・必要ナレッジ一式へ継続改善</p>
+          <small>システム運用・連携</small>
+        </div>
+        <div class="skill-card">
+          <div class="skill-card-top">
+            <code>/simple</code>
+            <span>その他</span>
+          </div>
+          <strong>ブレストスキル</strong>
+          <p>クリエイティブ作業や設計判断前の対話型ブレスト</p>
+          <small>ブレスト・整理</small>
+        </div>
+        <div class="skill-card">
+          <div class="skill-card-top">
+            <code>/capture</code>
+            <span>自動化・改善</span>
+          </div>
+          <strong>アイディア取込</strong>
+          <p>雑多な学び・アイディア・壁打ち・改善案を自動分類・保存</p>
+          <small>ブレスト・整理</small>
+        </div>
+        <div class="skill-card">
+          <div class="skill-card-top">
+            <code>/organize</code>
+            <span>自動化・改善</span>
+          </div>
+          <strong>毎ラリー整理</strong>
+          <p>直前セッションをAI内省→7カテゴリ判定→提案→承認→一括実行</p>
+          <small>ブレスト・整理</small>
+        </div>
+        <div class="skill-card">
+          <div class="skill-card-top">
+            <code>/knowledge</code>
+            <span>ナレッジ収集</span>
+          </div>
+          <strong>ナレッジ更新</strong>
+          <p>雑多に投げた情報を最適なナレッジファイルに自動振り分け</p>
+          <small>ナレッジ構築・収集</small>
+        </div>
+        <div class="skill-card">
+          <div class="skill-card-top">
+            <code>/knowledge-creator</code>
+            <span>コンテンツ制作</span>
+          </div>
+          <strong>ナレッジ構築</strong>
+          <p>パーソナル/プロダクト/コンテンツ ナレッジを体系的に構築</p>
+          <small>ナレッジ構築・収集</small>
+        </div>
+        <div class="skill-card">
+          <div class="skill-card-top">
+            <code>/knowledge-sync</code>
+            <span>コンテンツ制作</span>
+          </div>
+          <strong>日次自動収集</strong>
+          <p>X/Threads/YouTube/Plaud/Zoom/CW/Gmail等 全API横断ナレッジ収集</p>
+          <small>ナレッジ構築・収集</small>
+        </div>
+        <div class="skill-card">
+          <div class="skill-card-top">
+            <code>/morning-knowledge</code>
+            <span>ナレッジ収集</span>
+          </div>
+          <strong>朝のナレッジ収集</strong>
+          <p>MindMeister/Xブックマーク多段エンリッチ（毎朝）</p>
+          <small>ナレッジ構築・収集</small>
+        </div>
+        <div class="skill-card">
+          <div class="skill-card-top">
+            <code>/loom-knowledge</code>
+            <span>ナレッジ収集</span>
+          </div>
+          <strong>Loomナレッジ化</strong>
+          <p>Loom動画transcript→事業部別分類→Claude補正→GIF視覚解析統合</p>
+          <small>録音・動画ナレッジ化</small>
+        </div>
+        <div class="skill-card">
+          <div class="skill-card-top">
+            <code>/plaud</code>
+            <span>ナレッジ収集</span>
+          </div>
+          <strong>Plaud取込</strong>
+          <p>Plaud Note Pin の録音データ取得・文字起こし・ナレッジ保存</p>
+          <small>録音・動画ナレッジ化</small>
+        </div>
+        <div class="skill-card">
+          <div class="skill-card-top">
+            <code>/zoom</code>
+            <span>ナレッジ収集</span>
+          </div>
+          <strong>Zoom文字起こし</strong>
+          <p>Zoom録音の文字起こし・ナレッジ化</p>
+          <small>録音・動画ナレッジ化</small>
+        </div>
+        <div class="skill-card">
+          <div class="skill-card-top">
+            <code>/gdocs</code>
+            <span>ナレッジ収集</span>
+          </div>
+          <strong>Googleドキュメント</strong>
+          <p>Docs作成・テキスト挿入・タブ操作・ページ設定</p>
+          <small>Google Workspace連携</small>
+        </div>
+        <div class="skill-card">
+          <div class="skill-card-top">
+            <code>/google</code>
+            <span>コンテンツ制作</span>
+          </div>
+          <strong>Google Workspace統合</strong>
+          <p>Docs/Sheets/Slides/Drive を1スキルで統合操作</p>
+          <small>Google Workspace連携</small>
+        </div>
+        <div class="skill-card">
+          <div class="skill-card-top">
+            <code>/research</code>
+            <span>ナレッジ収集</span>
+          </div>
+          <strong>汎用リサーチ</strong>
+          <p>企業・アカウント・テーマ調査</p>
+          <small>リサーチ</small>
+        </div>
+        <div class="skill-card">
+          <div class="skill-card-top">
+            <code>/gear-research</code>
+            <span>ナレッジ収集</span>
+          </div>
+          <strong>機材リサーチ</strong>
+          <p>配信・収録機材の購入判断用横断リサーチ</p>
+          <small>リサーチ</small>
+        </div>
+        <div class="skill-card">
+          <div class="skill-card-top">
+            <code>/ads-creative</code>
+            <span>コンテンツ制作</span>
+          </div>
+          <strong>広告クリエイティブ</strong>
+          <p>Meta/YouTube広告のクリエイティブ一気通貫生成（D5/D4連携想定）</p>
+          <small>リサーチ</small>
+        </div></div>
+        </section>
+</div>
+
+<footer>
+  <p>Prosolv Studio AI経営チーム — <span class="accent">Claude Code</span></p>
+  <p class="privacy">公開URL · プライベート除外 · 静的共有</p>
+</footer>
+
+</body>
+</html>
