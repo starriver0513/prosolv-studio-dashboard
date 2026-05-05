@@ -1,0 +1,124 @@
+{
+  "root": "(local path hidden)",
+  "total_tasks": 228,
+  "total_open": 203,
+  "total_in_progress": 47,
+  "p0_tasks": 31,
+  "total_md": 15240,
+  "total_skills": 103,
+  "last_update": "2026-05-05 09:35",
+  "business_units": {
+    "SNS事業部": {
+      "tasks": 38,
+      "p0": 6,
+      "open": 36,
+      "md_files": 9878,
+      "skills": 24,
+      "subfolders": 11,
+      "counts": {
+        "new": 26,
+        "in_progress": 10,
+        "awaiting": 0,
+        "done": 2,
+        "blocked": 0,
+        "deferred": 0
+      }
+    },
+    "プロダクト事業部": {
+      "tasks": 53,
+      "p0": 5,
+      "open": 48,
+      "md_files": 2280,
+      "skills": 11,
+      "subfolders": 10,
+      "counts": {
+        "new": 37,
+        "in_progress": 11,
+        "awaiting": 0,
+        "done": 5,
+        "blocked": 0,
+        "deferred": 0
+      }
+    },
+    "セールス": {
+      "tasks": 9,
+      "p0": 0,
+      "open": 9,
+      "md_files": 56,
+      "skills": 7,
+      "subfolders": 7,
+      "counts": {
+        "new": 7,
+        "in_progress": 2,
+        "awaiting": 0,
+        "done": 0,
+        "blocked": 0,
+        "deferred": 0
+      }
+    },
+    "リストマーケ事業部": {
+      "tasks": 24,
+      "p0": 5,
+      "open": 23,
+      "md_files": 948,
+      "skills": 7,
+      "subfolders": 7,
+      "counts": {
+        "new": 20,
+        "in_progress": 3,
+        "awaiting": 0,
+        "done": 1,
+        "blocked": 0,
+        "deferred": 0
+      }
+    },
+    "経理": {
+      "tasks": 50,
+      "p0": 8,
+      "open": 34,
+      "md_files": 250,
+      "skills": 9,
+      "subfolders": 11,
+      "counts": {
+        "new": 24,
+        "in_progress": 8,
+        "awaiting": 0,
+        "done": 0,
+        "blocked": 2,
+        "deferred": 16
+      }
+    },
+    "経営企画": {
+      "tasks": 20,
+      "p0": 3,
+      "open": 19,
+      "md_files": 886,
+      "skills": 17,
+      "subfolders": 7,
+      "counts": {
+        "new": 14,
+        "in_progress": 5,
+        "awaiting": 0,
+        "done": 1,
+        "blocked": 0,
+        "deferred": 0
+      }
+    },
+    "AI活用事業部": {
+      "tasks": 34,
+      "p0": 4,
+      "open": 34,
+      "md_files": 942,
+      "skills": 28,
+      "subfolders": 8,
+      "counts": {
+        "new": 26,
+        "in_progress": 8,
+        "awaiting": 0,
+        "done": 0,
+        "blocked": 0,
+        "deferred": 0
+      }
+    }
+  }
+}

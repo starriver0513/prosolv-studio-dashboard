@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>AI活用事業部 | Prosolv Studio</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+
+<header>
+  <div class="grid-pattern"></div>
+  <div class="header-inner">
+    <div class="header-top">
+      <div class="brand">
+        <div class="brand-icon" style="background:linear-gradient(135deg, #6366f1, #6366f188)">AI</div>
+        <div class="brand-text">
+          <span class="brand-sub">Prosolv Studio 事業部ダッシュボード</span>
+          <h1><span class="accent">AI活用事業部</span></h1>
+        </div>
+      </div>
+      <div class="header-actions">
+        <a href="../index.html" class="nav-link">← 全体に戻る</a>
+      </div>
+    </div>
+    <div class="header-meta">Claude Code / Codex / システム改善 / スキル管理 / 経営可視化</div>
+  </div>
+</header>
+
+<div class="container">
+
+  <div class="kpi-grid" style="margin-bottom:32px">
+    <div class="card kpi-card">
+      <div class="kpi-label"><span>総タスク</span><span class="kpi-icon">全体</span></div>
+      <div class="kpi-value">34</div>
+      <div class="kpi-sub">全セクション合計</div>
+    </div>
+    <div class="card kpi-card highlight">
+      <div class="kpi-label"><span>進行中</span><span class="kpi-icon">実行</span></div>
+      <div class="kpi-value">8</div>
+      <div class="kpi-sub">アクティブタスク</div>
+    </div>
+    <div class="card kpi-card highlight">
+      <div class="kpi-label"><span>P0タスク</span><span class="kpi-icon">P0</span></div>
+      <div class="kpi-value" style="color:var(--danger)">4</div>
+      <div class="kpi-sub">最優先</div>
+    </div>
+    <div class="card kpi-card">
+      <div class="kpi-label"><span>MDファイル</span><span class="kpi-icon">MD</span></div>
+      <div class="kpi-value">942</div>
+      <div class="kpi-sub">888.8 MB</div>
+    </div>
+    <div class="card kpi-card">
+      <div class="kpi-label"><span>フォルダ</span><span class="kpi-icon">構造</span></div>
+      <div class="kpi-value">8</div>
+      <div class="kpi-sub">直下サブフォルダ</div>
+    </div>
+    <div class="card kpi-card">
+      <div class="kpi-label"><span>スキル</span><span class="kpi-icon">技能</span></div>
+      <div class="kpi-value">28</div>
+      <div class="kpi-sub">登録済み</div>
+    </div>
+  </div>
+
+  <div style="margin-bottom:32px">
+    <div class="section-header">
+      <div>
+        <div class="section-eyebrow">タスク</div>
+        <h2 class="section-title">タスク一覧</h2>
+      </div>
+      <span class="section-subtitle">セクション別に分類</span>
+    </div>
+    <div class="task-section task-section-in-progress"><h3>進行中（8件）</h3><div class="task-item p0"><strong>24時間ライフログ取得レイヤーを morning-knowledge に統合</strong> <div class="task-meta"><span>📅 2026-05-06</span> <span>👤 AI</span> <span>📊 85%（取得設計書作成、automation prompt 反映、morning-knowledge 正本へ v7 方針追加、`capture_24h.py` による LifeLog timeline / coverage 生成、LINEメッセージ単位抽出、Codex/Claudeラリーturn単位抽出、Calendar単発取込、トークン風文字列redactionまで完了。残: Calendar定期取得、LINEアプリ側の日次エクスポート、ラリー意思決定抽出の精度向上）</span></div><div class="task-next">→ `capture_24h.py` の出力を morning-knowledge Phase 8/10 の意思決定レポートへ読み込ませ、Calendar定期取得と `rally-analyzer.py` 連携を実装する</div></div>
+<div class="task-item p0"><strong>Plaud / Zoom 文字起こし STTスクリプトの xAI Grok移行未完</strong> <div class="task-meta"><span>📅 2026-05-05</span> <span>👤 AI</span> <span>📊 30%</span></div><div class="task-next">→ `plaud_batch.py` の `GROQ_API_KEY` 必須チェックを `XAI_API_KEY` に切替</div></div>
+<div class="task-item p0"><strong>Google Drive OAuth token 再認証（緊急）</strong> <div class="task-meta"><span>📅 2026-05-03</span> <span>👤 星川 / AI</span> <span>📊 30%（手順書済 / 実行待ち）</span></div><div class="task-next">→ `python3 .claude/scripts/gdocs/reauth.py` 実行 → ブラウザ認証</div></div>
+<div class="task-item p0"><strong>x_posts_batch スクリプト消失（復旧）</strong> <div class="task-meta"><span>📅 2026-05-05</span> <span>👤 AI</span> <span>📊 10%</span></div><div class="task-next">→ 旧版バックアップ確認 + 再構築</div></div>
+<div class="task-item p1"><strong>GAS資産のClaude Code / API / MCP移行棚卸し</strong> <div class="task-meta"><span>📅 2026-05-20</span> <span>👤 AI</span> <span>📊 20%</span></div><div class="task-next">→ 既存GASスクリプト一覧化 → 移行優先度判定</div></div>
+<div class="task-item p1"><strong>セキュリティ対策スキル - 記事ベース自動反映ループ開発</strong> <div class="task-meta"><span>📅 2026-05-25</span> <span>👤 AI</span> <span>📊 10%</span></div></div>
+<div class="task-item p1"><strong>Threads_API 接続環境構築</strong> <div class="task-meta"><span>📅 2026-05-15</span> <span>👤 AI</span> <span>📊 20%</span></div><div class="task-next">→ Meta Developer Console でアプリ作成 → API キー取得</div></div>
+<div class="task-item p1"><strong>Claude Code Desktop 完全攻略 ナレッジ整備</strong> <div class="task-meta"><span>📅 2026-05-10</span> <span>👤 AI / 星川</span></div></div></div>
+<div class="task-section task-section-pending"><h3>未着手（26件）</h3><div class="task-item p1"><strong>morning-knowledge 残課題（R4）対応</strong> <div class="task-meta"><span>📅 2026-05-15</span></div></div>
+<div class="task-item p1"><strong>X Bookmarks OCR quota + engagement 整備</strong> <div class="task-meta"><span>📅 2026-05-20</span></div></div>
+<div class="task-item p1"><strong>xAI STT判定 - 実打鍵モード正本化</strong></div>
+<div class="task-item p2"><strong>line-intake 横展開 - トーク履歴 汎用ナレッジ化</strong></div>
+<div class="task-item p2"><strong>image skill の reel等への統合</strong></div>
+<div class="task-item p2"><strong>meta_size 自動resize スクリプト</strong></div>
+<div class="task-item p2"><strong>multipart_form_data ヘルパー</strong></div>
+<div class="task-item p2"><strong>queue圧縮とdetect再検出の整合性バグ修正</strong></div>
+<div class="task-item p2"><strong>scheduled-tasks プロンプト更新追従性</strong></div>
+<div class="task-item p2"><strong>CS FAQ自動化パイプライン構築</strong></div>
+<div class="task-item p2"><strong>Zoom大容量ファイル レート制限回避（旧Groq制限の置換）</strong></div>
+<div class="task-item p2"><strong>全情報マークダウン化 + タイトル付き + フォルダ構造化原則の自動検証スキャナ</strong></div>
+<div class="task-item p2"><strong>env_key_candidate priority 整備</strong></div>
+<div class="task-item p2"><strong>weekly-evolve.py セッション数カウント乖離修正</strong></div>
+<div class="task-item p2"><strong>groq-transcribe モデル選定v2 → xAI Grok統一</strong></div>
+<div class="task-item p2"><strong>旧パス書換 保留リスト 一括処理</strong></div>
+<div class="task-item p2"><strong>権限フル付与とRCEリスクの両立設計</strong></div>
+<div class="task-item p2"><strong>正しい自動化の3大要件 - 運用者不要設計</strong></div>
+<div class="task-item p2"><strong>スキル名 日本語化</strong></div>
+<div class="task-item p2"><strong>返信SLA明文化と可視化</strong></div>
+<div class="task-item p2"><strong>セミナー前5日間シーケンス固定化</strong></div>
+<div class="task-item p2"><strong>成果報告ルーム 24時間コメント運用</strong></div>
+<div class="task-item p2"><strong>夏目さん業務集中リスク - D13前倒し</strong></div>
+<div class="task-item p2"><strong>VIP実績者グループへの週1発信必須化</strong></div>
+<div class="task-item p2"><strong>Slack連携 X予約投稿パイプラインの本番化</strong></div>
+<div class="task-item p2"><strong>全社AI秘書化（毎朝/毎夜の自動レポート）</strong></div></div>
+  </div>
+
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-bottom:32px">
+    <div class="card" style="padding:24px">
+      <div class="section-header">
+        <div>
+          <div class="section-eyebrow">構造</div>
+          <h2 class="section-title">サブフォルダ</h2>
+        </div>
+      </div>
+      <div class="subfolder-grid"><div class="subfolder">フォルダ / AI経営可視化システム</div>
+<div class="subfolder">フォルダ / Claude_Code</div>
+<div class="subfolder">フォルダ / Codex</div>
+<div class="subfolder">フォルダ / xmcp</div>
+<div class="subfolder">フォルダ / システム改善</div>
+<div class="subfolder">フォルダ / スキル</div>
+<div class="subfolder">フォルダ / スキル管理</div>
+<div class="subfolder">フォルダ / タスクアーカイブ</div></div>
+    </div>
+    <div class="card" style="padding:24px">
+      <div class="section-header">
+        <div>
+          <div class="section-eyebrow">スキル</div>
+          <h2 class="section-title">関連スキル</h2>
+        </div>
+      </div>
+      <div class="subfolder-grid"><div class="subfolder">スキル /FB</div>
+<div class="subfolder">スキル /ads-creative</div>
+<div class="subfolder">スキル /ai-management-evolution</div>
+<div class="subfolder">スキル /auto-skill</div>
+<div class="subfolder">スキル /capture</div>
+<div class="subfolder">スキル /codex</div>
+<div class="subfolder">スキル /daily-audit</div>
+<div class="subfolder">スキル /dashboard</div>
+<div class="subfolder">スキル /empirical-prompt-tuning</div>
+<div class="subfolder">スキル /env-bootstrap</div>
+<div class="subfolder">スキル /fb-propagate</div>
+<div class="subfolder">スキル /gdocs</div>
+<div class="subfolder">スキル /gear-research</div>
+<div class="subfolder">スキル /google</div>
+<div class="subfolder">スキル /knowledge</div>
+<div class="subfolder">スキル /knowledge-creator</div>
+<div class="subfolder">スキル /knowledge-sync</div>
+<div class="subfolder">スキル /loom-knowledge</div>
+<div class="subfolder">スキル /migrate-data</div>
+<div class="subfolder">スキル /morning</div>
+<div class="subfolder">スキル /morning-knowledge</div>
+<div class="subfolder">スキル /organize</div>
+<div class="subfolder">スキル /plaud</div>
+<div class="subfolder">スキル /research</div>
+<div class="subfolder">スキル /shutdown</div>
+<div class="subfolder">スキル /simple</div>
+<div class="subfolder">スキル /weekly-evolve</div>
+<div class="subfolder">スキル /zoom</div></div>
+    </div>
+  </div>
+
+</div>
+
+<footer>
+  <p>Prosolv Studio AI経営チーム — <span class="accent">Claude Code</span></p>
+  <p class="privacy">公開URL · プライベート除外 · 静的共有</p>
+  <p style="margin-top:8px">データソース: <code>📦事業部/AI活用事業部/</code></p>
+</footer>
+
+</body>
+</html>

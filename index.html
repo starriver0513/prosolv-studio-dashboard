@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>Prosolv Studio 経営ダッシュボード</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+<header>
+  <div class="grid-pattern"></div>
+  <div class="hero-light"></div>
+  <div class="header-inner">
+    <div class="header-top">
+      <div class="brand">
+        <div class="brand-icon">AI</div>
+        <div class="brand-text">
+          <span class="brand-sub">Prosolv Studio 経営司令室</span>
+          <h1>AI経営<span class="accent">ダッシュボード</span></h1>
+        </div>
+      </div>
+      <div class="header-actions">
+        <span class="nav-link active">経営全体</span>
+        <a href="事業部別ダッシュボード/AI活用事業部.html" class="nav-link">AI運用</a>
+      </div>
+    </div>
+    <div class="header-meta">
+      <span>最終更新: <span style="color:var(--muted)">2026-05-05 09:35</span></span>
+      <span>Co-Dex × 7事業部 · <span class="highlight">静的共有</span></span>
+    </div>
+    
+    <div class="exec-pulse">
+      <div class="pulse-item">
+        <span class="pulse-label">経営負荷</span>
+        <strong>高負荷</strong>
+        <span>未完了 203件 / 総タスク 228件</span>
+      </div>
+      <div class="pulse-item">
+        <span class="pulse-label">実行状況</span>
+        <strong>稼働中</strong>
+        <span>進行中ワークフロー 47件</span>
+      </div>
+      <div class="pulse-item">
+        <span class="pulse-label">今日の焦点</span>
+        <strong>P0圧縮</strong>
+        <span>P0タスク 31件</span>
+      </div>
+    </div>
+  </div>
+</header>
+
+<div class="container">
+
+  <!-- KPI Cards -->
+  <div class="kpi-grid" style="margin-bottom:32px">
+    <div class="card kpi-card">
+      <div class="kpi-label"><span>総タスク</span><span class="kpi-icon">全体</span></div>
+      <div class="kpi-value">228</div>
+      <div class="kpi-sub">全事業部合計</div>
+    </div>
+    <div class="card kpi-card highlight">
+      <div class="kpi-label"><span>進行中</span><span class="kpi-icon">実行</span></div>
+      <div class="kpi-value">47</div>
+      <div class="kpi-sub">着手済みタスク</div>
+    </div>
+    <div class="card kpi-card">
+      <div class="kpi-label"><span>未完了</span><span class="kpi-icon">未完</span></div>
+      <div class="kpi-value">203</div>
+      <div class="kpi-sub">進行中+未着手+ブロック</div>
+    </div>
+    <div class="card kpi-card highlight">
+      <div class="kpi-label"><span>P0タスク</span><span class="kpi-icon">P0</span></div>
+      <div class="kpi-value" style="color:var(--danger)">31</div>
+      <div class="kpi-sub">最優先</div>
+    </div>
+    <div class="card kpi-card">
+      <div class="kpi-label"><span>総MDファイル</span><span class="kpi-icon">MD</span></div>
+      <div class="kpi-value">15,240</div>
+      <div class="kpi-sub">全事業部配下</div>
+    </div>
+    <div class="card kpi-card">
+      <div class="kpi-label"><span>スキル</span><span class="kpi-icon">技能</span></div>
+      <div class="kpi-value">103</div>
+      <div class="kpi-sub">全事業部合計</div>
+    </div>
+  </div>
+
+  <div class="dashboard-band">
+    <div class="section-header">
+      <div>
+        <div class="section-eyebrow">組織</div>
+        <h2 class="section-title">経営組織図</h2>
+      </div>
+      <span class="section-subtitle">需要創出、商品化、管理、AI基盤を1枚で確認</span>
+    </div>
+    
+    <div class="org-map">
+      <div class="org-core">
+        <span>柏井雄也ナレッジ中枢</span>
+        <strong>AI経営OS</strong>
+        <small>ナレッジ × 事業部 × 自動化</small>
+      </div>
+      <div class="org-groups">
+        <div class="org-group">
+          <div class="org-group-title">需要創出</div>
+          <div class="org-nodes">
+            <a class="org-node" href="事業部別ダッシュボード/SNS事業部.html" style="--node-color:#22d3ee">
+              <span class="org-node-id">SNS</span>
+              <strong>SNS事業部</strong>
+              <small>市場接点を増やし、一次情報と反応データを集める</small>
+              <div class="org-node-meta">
+                <span>未完了 36件</span>
+                <span>スキル 24件</span>
+              </div>
+            </a>
+            <a class="org-node" href="事業部別ダッシュボード/リストマーケ事業部.html" style="--node-color:#a855f7">
+              <span class="org-node-id">LIST</span>
+              <strong>リストマーケ事業部</strong>
+              <small>LINE/メール/オプチャで見込み客を育成する</small>
+              <div class="org-node-meta">
+                <span>未完了 23件</span>
+                <span>スキル 7件</span>
+              </div>
+            </a></div>
+        </div>
+        <div class="org-group">
+          <div class="org-group-title">商品化</div>
+          <div class="org-nodes">
+            <a class="org-node" href="事業部別ダッシュボード/プロダクト事業部.html" style="--node-color:#8b5cf6">
+              <span class="org-node-id">PROD</span>
+              <strong>プロダクト事業部</strong>
+              <small>ナレッジを商品・教材・提供価値へ変換する</small>
+              <div class="org-node-meta">
+                <span>未完了 48件</span>
+                <span>スキル 11件</span>
+              </div>
+            </a>
+            <a class="org-node" href="事業部別ダッシュボード/セールス.html" style="--node-color:#60a5fa">
+              <span class="org-node-id">SALES</span>
+              <strong>セールス</strong>
+              <small>セミナー、LP、個別相談で購買意思決定を設計する</small>
+              <div class="org-node-meta">
+                <span>未完了 9件</span>
+                <span>スキル 7件</span>
+              </div>
+            </a></div>
+        </div>
+        <div class="org-group">
+          <div class="org-group-title">管理</div>
+          <div class="org-nodes">
+            <a class="org-node" href="事業部別ダッシュボード/経理.html" style="--node-color:#38bdf8">
+              <span class="org-node-id">ACCT</span>
+              <strong>経理</strong>
+              <small>売上、経費、契約、証憑を経営判断へ接続する</small>
+              <div class="org-node-meta">
+                <span>未完了 34件</span>
+                <span>スキル 9件</span>
+              </div>
+            </a>
+            <a class="org-node" href="事業部別ダッシュボード/経営企画.html" style="--node-color:#d946ef">
+              <span class="org-node-id">PLAN</span>
+              <strong>経営企画</strong>
+              <small>全体戦略、KPI、事業計画、優先順位を決める</small>
+              <div class="org-node-meta">
+                <span>未完了 19件</span>
+                <span>スキル 17件</span>
+              </div>
+            </a></div>
+        </div>
+        <div class="org-group">
+          <div class="org-group-title">AI基盤</div>
+          <div class="org-nodes">
+            <a class="org-node" href="事業部別ダッシュボード/AI活用事業部.html" style="--node-color:#6366f1">
+              <span class="org-node-id">AI</span>
+              <strong>AI活用事業部</strong>
+              <small>Codex、スキル、automation、可視化基盤を改善する</small>
+              <div class="org-node-meta">
+                <span>未完了 34件</span>
+                <span>スキル 28件</span>
+              </div>
+            </a></div>
+        </div></div>
+    </div>
+  </div>
+
+  <div class="dashboard-band">
+    <div class="section-header">
+      <div>
+        <div class="section-eyebrow">プロダクト</div>
+        <h2 class="section-title">プロダクトダッシュボード</h2>
+      </div>
+      <span class="section-subtitle">講座、顧問、受託、スケール商品の状態</span>
+    </div>
+    <div class="product-grid">
+        <div class="product-card">
+          <div class="product-topline">
+            <span>JV講座運営</span>
+            <b>MD 389件</b>
+          </div>
+          <h3>AIマーケティング構築講座</h3>
+          <p>教材 / 受講生サポート / 成果 / ナレッジ</p>
+          <div class="product-metrics">
+            <span>フォルダ 9件</span>
+            <span>プロダクト事業部</span>
+          </div>
+        </div>
+        <div class="product-card">
+          <div class="product-topline">
+            <span>自社主力商品</span>
+            <b>MD 17件</b>
+          </div>
+          <h3>AIマーケター養成講座</h3>
+          <p>カリキュラム / 教材 / ナレッジ</p>
+          <div class="product-metrics">
+            <span>フォルダ 6件</span>
+            <span>プロダクト事業部</span>
+          </div>
+        </div>
+        <div class="product-card">
+          <div class="product-topline">
+            <span>法人・高単価支援</span>
+            <b>MD 23件</b>
+          </div>
+          <h3>AIマーケ丸投げ顧問</h3>
+          <p>競合分析 / 事例 / ナレッジ</p>
+          <div class="product-metrics">
+            <span>フォルダ 7件</span>
+            <span>プロダクト事業部</span>
+          </div>
+        </div>
+        <div class="product-card">
+          <div class="product-topline">
+            <span>コンテンツ販売導線</span>
+            <b>MD 12件</b>
+          </div>
+          <h3>コンテンツ販売スクール</h3>
+          <p>商品概要 / 施策 / ターゲット別</p>
+          <div class="product-metrics">
+            <span>フォルダ 6件</span>
+            <span>プロダクト事業部</span>
+          </div>
+        </div>
+        <div class="product-card">
+          <div class="product-topline">
+            <span>スケール商品</span>
+            <b>MD 12件</b>
+          </div>
+          <h3>サポートなし動画講座</h3>
+          <p>商品概要 / 施策 / ナレッジ</p>
+          <div class="product-metrics">
+            <span>フォルダ 6件</span>
+            <span>プロダクト事業部</span>
+          </div>
+        </div>
+        <div class="product-card">
+          <div class="product-topline">
+            <span>受託・共同運用</span>
+            <b>MD 80件</b>
+          </div>
+          <h3>おさるさん受託案件</h3>
+          <p>LINE / SNS / 住宅 / ナレッジ</p>
+          <div class="product-metrics">
+            <span>フォルダ 4件</span>
+            <span>プロダクト事業部</span>
+          </div>
+        </div></div>
+  </div>
+
+  <!-- Business Units -->
+  <div style="margin-bottom:32px">
+    <div class="section-header">
+      <div>
+        <div class="section-eyebrow">事業部</div>
+        <h2 class="section-title">事業部オペレーション</h2>
+      </div>
+      <span class="section-subtitle">タスク、ナレッジ、スキル、運営リズム</span>
+    </div>
+    <div class="bu-grid">
+    <a href="事業部別ダッシュボード/SNS事業部.html" class="card bu-card" style="--bu-color:#22d3ee">
+      <div class="bu-bar" style="background:linear-gradient(90deg, #22d3ee, #22d3ee88 70%, transparent)"></div>
+      <div style="display:flex;align-items:center;gap:8px">
+        <span class="bu-id" style="background:#22d3ee22;color:#22d3ee;border:1px solid #22d3ee55">SNS</span>
+        <span class="bu-cadence">毎日: 投稿/反応確認</span>
+      </div>
+      <div class="bu-name">SNS事業部</div>
+      <div class="bu-duties">市場接点を増やし、一次情報と反応データを集める</div>
+      <div style="margin-top:8px">
+        <div style="font-size:10px;letter-spacing:0.15em;text-transform:uppercase;color:var(--muted-2);font-family:monospace;margin-bottom:6px">タスク</div>
+        <div class="task-bar"><div class="bar-seg" style="flex-basis:68.4%;background:var(--accent-bright)" title="new: 26"></div><div class="bar-seg" style="flex-basis:26.3%;background:var(--accent)" title="in_progress: 10"></div><div class="bar-seg" style="flex-basis:5.3%;background:var(--muted-2)" title="done: 2"></div></div>
+        <div style="margin-top:6px"><div class="bu-tags"><span class="tag accent">進行中 10</span> <span class="tag">未着手 26</span> <span class="tag success">完了 2</span></div></div>
+      </div>
+      <div class="bu-meta" style="margin-top:12px">
+        <div class="bu-meta-item"><span>MD</span><span style="color:var(--muted-2)">ファイル</span><span class="meta-val">9878</span></div>
+        <div class="bu-meta-item"><span>DIR</span><span style="color:var(--muted-2)">フォルダ</span><span class="meta-val">11</span></div>
+        <div class="bu-meta-item"><span>SK</span><span style="color:var(--muted-2)">スキル</span><span class="meta-val">24</span></div>
+        <div class="bu-meta-item"><span>TS</span><span style="color:var(--muted-2)">タスク</span><span class="meta-val">38</span></div>
+      </div>
+      <div class="bu-footer">
+        <span>259.9 MB</span>
+      </div>
+    </a>
+    <a href="事業部別ダッシュボード/プロダクト事業部.html" class="card bu-card" style="--bu-color:#8b5cf6">
+      <div class="bu-bar" style="background:linear-gradient(90deg, #8b5cf6, #8b5cf688 70%, transparent)"></div>
+      <div style="display:flex;align-items:center;gap:8px">
+        <span class="bu-id" style="background:#8b5cf622;color:#8b5cf6;border:1px solid #8b5cf655">PROD</span>
+        <span class="bu-cadence">毎週: 教材/提供価値更新</span>
+      </div>
+      <div class="bu-name">プロダクト事業部</div>
+      <div class="bu-duties">ナレッジを商品・教材・提供価値へ変換する</div>
+      <div style="margin-top:8px">
+        <div style="font-size:10px;letter-spacing:0.15em;text-transform:uppercase;color:var(--muted-2);font-family:monospace;margin-bottom:6px">タスク</div>
+        <div class="task-bar"><div class="bar-seg" style="flex-basis:69.8%;background:var(--accent-bright)" title="new: 37"></div><div class="bar-seg" style="flex-basis:20.8%;background:var(--accent)" title="in_progress: 11"></div><div class="bar-seg" style="flex-basis:9.4%;background:var(--muted-2)" title="done: 5"></div></div>
+        <div style="margin-top:6px"><div class="bu-tags"><span class="tag accent">進行中 11</span> <span class="tag">未着手 37</span> <span class="tag success">完了 5</span></div></div>
+      </div>
+      <div class="bu-meta" style="margin-top:12px">
+        <div class="bu-meta-item"><span>MD</span><span style="color:var(--muted-2)">ファイル</span><span class="meta-val">2280</span></div>
+        <div class="bu-meta-item"><span>DIR</span><span style="color:var(--muted-2)">フォルダ</span><span class="meta-val">10</span></div>
+        <div class="bu-meta-item"><span>SK</span><span style="color:var(--muted-2)">スキル</span><span class="meta-val">11</span></div>
+        <div class="bu-meta-item"><span>TS</span><span style="color:var(--muted-2)">タスク</span><span class="meta-val">53</span></div>
+      </div>
+      <div class="bu-footer">
+        <span>17.9 GB</span>
+      </div>
+    </a>
+    <a href="事業部別ダッシュボード/セールス.html" class="card bu-card" style="--bu-color:#60a5fa">
+      <div class="bu-bar" style="background:linear-gradient(90deg, #60a5fa, #60a5fa88 70%, transparent)"></div>
+      <div style="display:flex;align-items:center;gap:8px">
+        <span class="bu-id" style="background:#60a5fa22;color:#60a5fa;border:1px solid #60a5fa55">SALES</span>
+        <span class="bu-cadence">ローンチ: LP/UTAGE/相談導線</span>
+      </div>
+      <div class="bu-name">セールス</div>
+      <div class="bu-duties">セミナー、LP、個別相談で購買意思決定を設計する</div>
+      <div style="margin-top:8px">
+        <div style="font-size:10px;letter-spacing:0.15em;text-transform:uppercase;color:var(--muted-2);font-family:monospace;margin-bottom:6px">タスク</div>
+        <div class="task-bar"><div class="bar-seg" style="flex-basis:77.8%;background:var(--accent-bright)" title="new: 7"></div><div class="bar-seg" style="flex-basis:22.2%;background:var(--accent)" title="in_progress: 2"></div></div>
+        <div style="margin-top:6px"><div class="bu-tags"><span class="tag accent">進行中 2</span> <span class="tag">未着手 7</span></div></div>
+      </div>
+      <div class="bu-meta" style="margin-top:12px">
+        <div class="bu-meta-item"><span>MD</span><span style="color:var(--muted-2)">ファイル</span><span class="meta-val">56</span></div>
+        <div class="bu-meta-item"><span>DIR</span><span style="color:var(--muted-2)">フォルダ</span><span class="meta-val">7</span></div>
+        <div class="bu-meta-item"><span>SK</span><span style="color:var(--muted-2)">スキル</span><span class="meta-val">7</span></div>
+        <div class="bu-meta-item"><span>TS</span><span style="color:var(--muted-2)">タスク</span><span class="meta-val">9</span></div>
+      </div>
+      <div class="bu-footer">
+        <span>28.9 MB</span>
+      </div>
+    </a>
+    <a href="事業部別ダッシュボード/リストマーケ事業部.html" class="card bu-card" style="--bu-color:#a855f7">
+      <div class="bu-bar" style="background:linear-gradient(90deg, #a855f7, #a855f788 70%, transparent)"></div>
+      <div style="display:flex;align-items:center;gap:8px">
+        <span class="bu-id" style="background:#a855f722;color:#a855f7;border:1px solid #a855f755">LIST</span>
+        <span class="bu-cadence">毎日: 配信/リスト温度管理</span>
+      </div>
+      <div class="bu-name">リストマーケ事業部</div>
+      <div class="bu-duties">LINE/メール/オプチャで見込み客を育成する</div>
+      <div style="margin-top:8px">
+        <div style="font-size:10px;letter-spacing:0.15em;text-transform:uppercase;color:var(--muted-2);font-family:monospace;margin-bottom:6px">タスク</div>
+        <div class="task-bar"><div class="bar-seg" style="flex-basis:83.3%;background:var(--accent-bright)" title="new: 20"></div><div class="bar-seg" style="flex-basis:12.5%;background:var(--accent)" title="in_progress: 3"></div><div class="bar-seg" style="flex-basis:4.2%;background:var(--muted-2)" title="done: 1"></div></div>
+        <div style="margin-top:6px"><div class="bu-tags"><span class="tag accent">進行中 3</span> <span class="tag">未着手 20</span> <span class="tag success">完了 1</span></div></div>
+      </div>
+      <div class="bu-meta" style="margin-top:12px">
+        <div class="bu-meta-item"><span>MD</span><span style="color:var(--muted-2)">ファイル</span><span class="meta-val">948</span></div>
+        <div class="bu-meta-item"><span>DIR</span><span style="color:var(--muted-2)">フォルダ</span><span class="meta-val">7</span></div>
+        <div class="bu-meta-item"><span>SK</span><span style="color:var(--muted-2)">スキル</span><span class="meta-val">7</span></div>
+        <div class="bu-meta-item"><span>TS</span><span style="color:var(--muted-2)">タスク</span><span class="meta-val">24</span></div>
+      </div>
+      <div class="bu-footer">
+        <span>11.0 MB</span>
+      </div>
+    </a>
+    <a href="事業部別ダッシュボード/経理.html" class="card bu-card" style="--bu-color:#38bdf8">
+      <div class="bu-bar" style="background:linear-gradient(90deg, #38bdf8, #38bdf888 70%, transparent)"></div>
+      <div style="display:flex;align-items:center;gap:8px">
+        <span class="bu-id" style="background:#38bdf822;color:#38bdf8;border:1px solid #38bdf855">ACCT</span>
+        <span class="bu-cadence">毎週: 数字/証憑/契約棚卸し</span>
+      </div>
+      <div class="bu-name">経理</div>
+      <div class="bu-duties">売上、経費、契約、証憑を経営判断へ接続する</div>
+      <div style="margin-top:8px">
+        <div style="font-size:10px;letter-spacing:0.15em;text-transform:uppercase;color:var(--muted-2);font-family:monospace;margin-bottom:6px">タスク</div>
+        <div class="task-bar"><div class="bar-seg" style="flex-basis:48.0%;background:var(--accent-bright)" title="new: 24"></div><div class="bar-seg" style="flex-basis:16.0%;background:var(--accent)" title="in_progress: 8"></div><div class="bar-seg" style="flex-basis:4.0%;background:var(--danger)" title="blocked: 2"></div><div class="bar-seg" style="flex-basis:32.0%;background:var(--border-strong)" title="deferred: 16"></div></div>
+        <div style="margin-top:6px"><div class="bu-tags"><span class="tag accent">進行中 8</span> <span class="tag">未着手 24</span> <span class="tag danger">ブロック 2</span></div></div>
+      </div>
+      <div class="bu-meta" style="margin-top:12px">
+        <div class="bu-meta-item"><span>MD</span><span style="color:var(--muted-2)">ファイル</span><span class="meta-val">250</span></div>
+        <div class="bu-meta-item"><span>DIR</span><span style="color:var(--muted-2)">フォルダ</span><span class="meta-val">11</span></div>
+        <div class="bu-meta-item"><span>SK</span><span style="color:var(--muted-2)">スキル</span><span class="meta-val">9</span></div>
+        <div class="bu-meta-item"><span>TS</span><span style="color:var(--muted-2)">タスク</span><span class="meta-val">50</span></div>
+      </div>
+      <div class="bu-footer">
+        <span>93.4 MB</span>
+      </div>
+    </a>
+    <a href="事業部別ダッシュボード/経営企画.html" class="card bu-card" style="--bu-color:#d946ef">
+      <div class="bu-bar" style="background:linear-gradient(90deg, #d946ef, #d946ef88 70%, transparent)"></div>
+      <div style="display:flex;align-items:center;gap:8px">
+        <span class="bu-id" style="background:#d946ef22;color:#d946ef;border:1px solid #d946ef55">PLAN</span>
+        <span class="bu-cadence">毎週: KPI/優先度レビュー</span>
+      </div>
+      <div class="bu-name">経営企画</div>
+      <div class="bu-duties">全体戦略、KPI、事業計画、優先順位を決める</div>
+      <div style="margin-top:8px">
+        <div style="font-size:10px;letter-spacing:0.15em;text-transform:uppercase;color:var(--muted-2);font-family:monospace;margin-bottom:6px">タスク</div>
+        <div class="task-bar"><div class="bar-seg" style="flex-basis:70.0%;background:var(--accent-bright)" title="new: 14"></div><div class="bar-seg" style="flex-basis:25.0%;background:var(--accent)" title="in_progress: 5"></div><div class="bar-seg" style="flex-basis:5.0%;background:var(--muted-2)" title="done: 1"></div></div>
+        <div style="margin-top:6px"><div class="bu-tags"><span class="tag accent">進行中 5</span> <span class="tag">未着手 14</span> <span class="tag success">完了 1</span></div></div>
+      </div>
+      <div class="bu-meta" style="margin-top:12px">
+        <div class="bu-meta-item"><span>MD</span><span style="color:var(--muted-2)">ファイル</span><span class="meta-val">886</span></div>
+        <div class="bu-meta-item"><span>DIR</span><span style="color:var(--muted-2)">フォルダ</span><span class="meta-val">7</span></div>
+        <div class="bu-meta-item"><span>SK</span><span style="color:var(--muted-2)">スキル</span><span class="meta-val">17</span></div>
+        <div class="bu-meta-item"><span>TS</span><span style="color:var(--muted-2)">タスク</span><span class="meta-val">20</span></div>
+      </div>
+      <div class="bu-footer">
+        <span>143.9 MB</span>
+      </div>
+    </a>
+    <a href="事業部別ダッシュボード/AI活用事業部.html" class="card bu-card" style="--bu-color:#6366f1">
+      <div class="bu-bar" style="background:linear-gradient(90deg, #6366f1, #6366f188 70%, transparent)"></div>
+      <div style="display:flex;align-items:center;gap:8px">
+        <span class="bu-id" style="background:#6366f122;color:#6366f1;border:1px solid #6366f155">AI</span>
+        <span class="bu-cadence">毎日: 自動化/スキル改善</span>
+      </div>
+      <div class="bu-name">AI活用事業部</div>
+      <div class="bu-duties">Codex、スキル、automation、可視化基盤を改善する</div>
+      <div style="margin-top:8px">
+        <div style="font-size:10px;letter-spacing:0.15em;text-transform:uppercase;color:var(--muted-2);font-family:monospace;margin-bottom:6px">タスク</div>
+        <div class="task-bar"><div class="bar-seg" style="flex-basis:76.5%;background:var(--accent-bright)" title="new: 26"></div><div class="bar-seg" style="flex-basis:23.5%;background:var(--accent)" title="in_progress: 8"></div></div>
+        <div style="margin-top:6px"><div class="bu-tags"><span class="tag accent">進行中 8</span> <span class="tag">未着手 26</span></div></div>
+      </div>
+      <div class="bu-meta" style="margin-top:12px">
+        <div class="bu-meta-item"><span>MD</span><span style="color:var(--muted-2)">ファイル</span><span class="meta-val">942</span></div>
+        <div class="bu-meta-item"><span>DIR</span><span style="color:var(--muted-2)">フォルダ</span><span class="meta-val">8</span></div>
+        <div class="bu-meta-item"><span>SK</span><span style="color:var(--muted-2)">スキル</span><span class="meta-val">28</span></div>
+        <div class="bu-meta-item"><span>TS</span><span style="color:var(--muted-2)">タスク</span><span class="meta-val">34</span></div>
+      </div>
+      <div class="bu-footer">
+        <span>888.8 MB</span>
+      </div>
+    </a>
+    </div>
+  </div>
+
+  <!-- Quick Actions -->
+  <div class="card" style="padding:24px;margin-bottom:32px">
+    <div class="section-header">
+      <div>
+        <div class="section-eyebrow">自動化</div>
+        <h2 class="section-title">日次オートメーション</h2>
+      </div>
+    </div>
+    <div class="quick-grid">
+      <div class="quick-item"><strong>朝会</strong><code>/morning</code><span>当日のP0と経営フォーカス</span></div>
+      <div class="quick-item"><strong>タスク横断</strong><code>/tasks</code><span>全事業部タスク横断</span></div>
+      <div class="quick-item"><strong>更新</strong><code>refresh.sh</code><span>HTML更新とChrome表示</span></div>
+      <div class="quick-item"><strong>スキル候補</strong><code>/auto-skill</code><span>反復業務のスキル化候補</span></div>
+      <div class="quick-item"><strong>終業</strong><code>/shutdown</code><span>終業処理と翌日フォーカス</span></div>
+    </div>
+  </div>
+
+  <!-- Structure -->
+  <div class="card" style="padding:24px">
+    <div class="section-header">
+      <div>
+        <div class="section-eyebrow">データソース</div>
+        <h2 class="section-title">データソース構造</h2>
+      </div>
+    </div>
+    <ul class="structure-list">
+      <li><code>📦事業部/{事業部名}/タスク.md</code> — 各事業部のタスク管理</li>
+      <li><code>📦事業部/{事業部名}/タスクアーカイブ/完了済みタスク/</code> — 完了タスクの永久保存</li>
+      <li><code>📦事業部/{事業部名}/_skills.md</code> — 関連スキル一覧</li>
+      <li><code>📦事業部/{事業部名}/_INDEX.md</code> — フォルダ構造マップ</li>
+    </ul>
+  </div>
+
+</div>
+
+<footer>
+  <p>Prosolv Studio AI経営チーム — <span class="accent">Claude Code</span></p>
+  <p class="privacy">公開URL · プライベート除外 · 静的共有</p>
+</footer>
+
+</body>
+</html>

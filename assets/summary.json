@@ -1,0 +1,37 @@
+{
+  "generated_at": "2026-05-05T09:35:34+09:00",
+  "root": "(local path hidden)",
+  "dashboard": {
+    "mode": "static_html",
+    "path": "(local path hidden)",
+    "entry": "(local path hidden)"
+  },
+  "scan_policy": {
+    "excluded": [
+      ".git",
+      ".next",
+      "__pycache__",
+      "node_modules",
+      "🔒プライベート",
+      "🗂️アーカイブ"
+    ],
+    "external_send": false
+  },
+  "kpi": {
+    "total_files": 46910,
+    "rally_sessions_7d": 99,
+    "open_tasks": 187,
+    "auto_skill_queue": 36
+  },
+  "details": {
+    "open_tasks_by_business_unit": {
+      "SNS事業部": 31,
+      "プロダクト事業部": 45,
+      "セールス": 9,
+      "リストマーケ事業部": 15,
+      "経理": 34,
+      "経営企画": 19,
+      "AI活用事業部": 34
+    }
+  }
+}
