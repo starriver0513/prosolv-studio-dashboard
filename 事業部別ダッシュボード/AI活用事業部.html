@@ -48,7 +48,7 @@
     <div class="card kpi-card">
       <div class="kpi-label"><span>MDファイル</span><span class="kpi-icon">MD</span></div>
       <div class="kpi-value">944</div>
-      <div class="kpi-sub">888.9 MB</div>
+      <div class="kpi-sub">889.1 MB</div>
     </div>
     <div class="card kpi-card">
       <div class="kpi-label"><span>フォルダ</span><span class="kpi-icon">構造</span></div>
@@ -65,6 +65,82 @@
       <div class="kpi-value">6</div>
       <div class="kpi-sub">コンテンツ生成系</div>
     </div>
+    <div class="card kpi-card highlight">
+      <div class="kpi-label"><span>重要不足</span><span class="kpi-icon">不足</span></div>
+      <div class="kpi-value" style="color:var(--warning)">1</div>
+      <div class="kpi-sub">スキル/ナレッジ/継続単位</div>
+    </div>
+  </div>
+
+  <div style="margin-bottom:32px">
+    <div class="section-header">
+      <div>
+        <div class="section-eyebrow">不足検知</div>
+        <h2 class="section-title">最終目標へのギャップ</h2>
+      </div>
+      <span class="section-subtitle">この事業部に必要なスキル・ナレッジ・継続単位</span>
+    </div>
+    <div class="gap-card-grid">
+        <div class="gap-card p0">
+          <div class="gap-card-top">
+            <span class="gap-priority">P0</span>
+            <div class="gap-tags"><span class="tag warning">スキル</span><span class="tag warning">継続単位</span></div>
+          </div>
+          <strong>公開ダッシュボード</strong>
+          <p>経営状態をチーム共有URLへ安全に反映する</p>
+          <div class="gap-action"><span>AIアクション</span>公開前に秘匿情報・鮮度・リンクを検査する</div>
+          <div class="gap-skill-line"><code>/dashboard-publish-audit</code></div>
+          
+          <div class="gap-meta">
+            <span>ナレッジ: 5件</span>
+            <span>継続単位: 未検出</span>
+          </div>
+        </div>
+        <div class="gap-card ok">
+          <div class="gap-card-top">
+            <span class="gap-priority">OK</span>
+            <div class="gap-tags"><span class="tag success">充足</span></div>
+          </div>
+          <strong>ナレッジ自動同期</strong>
+          <p>外部APIとローカル知見をナレッジへ集約する</p>
+          <div class="gap-action"><span>AIアクション</span>古いナレッジと不足ナレッジを毎日検知する</div>
+          <div class="gap-skill-line"><code>/knowledge</code><code>/knowledge-creator</code><code>/knowledge-sync</code><code>/morning-knowledge</code></div>
+          
+          <div class="gap-meta">
+            <span>ナレッジ: 5件</span>
+            <span>継続単位: 2件</span>
+          </div>
+        </div>
+        <div class="gap-card p1">
+          <div class="gap-card-top">
+            <span class="gap-priority">P1</span>
+            <div class="gap-tags"><span class="tag warning">継続単位</span></div>
+          </div>
+          <strong>スキル自動改善</strong>
+          <p>反復業務をスキル化し、FBで改善する</p>
+          <div class="gap-action"><span>AIアクション</span>不足スキルを検出し、skill-creatorへ渡す仕様を作る</div>
+          <div class="gap-skill-line"><code>/auto-skill</code><code>/anthropic-skills:skill-creator</code><code>/empirical-prompt-tuning</code><code>/FB</code></div>
+          
+          <div class="gap-meta">
+            <span>ナレッジ: 5件</span>
+            <span>継続単位: 未検出</span>
+          </div>
+        </div>
+        <div class="gap-card p1">
+          <div class="gap-card-top">
+            <span class="gap-priority">P1</span>
+            <div class="gap-tags"><span class="tag warning">継続単位</span></div>
+          </div>
+          <strong>ディレクトリ継続改善</strong>
+          <p>1媒体・1継続タスク・1主要スキル構造へ寄せ続ける</p>
+          <div class="gap-action"><span>AIアクション</span>事業部ごとの不足フォルダ・SOP・ナレッジを自動補完する</div>
+          <div class="gap-skill-line"><code>/migrate-data</code><code>/ai-management-evolution</code><code>/organize</code></div>
+          
+          <div class="gap-meta">
+            <span>ナレッジ: 5件</span>
+            <span>継続単位: 未検出</span>
+          </div>
+        </div></div>
   </div>
 
   <div style="margin-bottom:32px">

@@ -1,0 +1,705 @@
+{
+  "last_update": "2026-05-05 18:04",
+  "summary": {
+    "total": 28,
+    "ready": 9,
+    "skill_missing": 7,
+    "knowledge_missing": 0,
+    "unit_missing": 18,
+    "p0": 6
+  },
+  "gaps": [
+    {
+      "name": "X発信ループ",
+      "goal": "Xの反応を集め、長文・記事・図解へ継続変換する",
+      "action": "X反応→ナレッジ→次回投稿案までを自動で回す",
+      "suggested_skill": "/x-growth-loop",
+      "priority": "OK",
+      "status": "運用中",
+      "missing": [],
+      "matched_skills": [
+        "/x-long-post",
+        "/x-article",
+        "/x-article-writer",
+        "/x-article-thumbnail"
+      ],
+      "knowledge_hits": [
+        "_index.md",
+        "note/_index.md",
+        "note/02_施策_2026-03_gpts_note執筆自動化/_index.md",
+        "note/03_ナレッジ/sns攻略_note/_index.md",
+        "11_タスク/01_新規_未処理/2026-05-04_013213_こんちゃんさん-英語youtubeskillフィードバック_6grf6v525mq886vx.md"
+      ],
+      "unit_hits": [
+        "_横断ナレッジ/01_sop_標準手順書/_index.md",
+        "x/改善ログ.md",
+        "x/_継続タスク.md"
+      ],
+      "business_unit": "SNS事業部"
+    },
+    {
+      "name": "YouTube企画・台本",
+      "goal": "リサーチから企画、タイトル、台本まで作る",
+      "action": "企画・台本・公開後分析を1つの継続タスクへ束ねる",
+      "suggested_skill": "/youtube-publish-loop",
+      "priority": "OK",
+      "status": "運用中",
+      "missing": [],
+      "matched_skills": [
+        "/youtube-research",
+        "/youtube-planning",
+        "/youtube-script",
+        "/instagram-reel"
+      ],
+      "knowledge_hits": [
+        "11_タスク/01_新規_未処理/2026-05-04_013213_こんちゃんさん-英語youtubeskillフィードバック_6grf6v525mq886vx.md",
+        "11_タスク/01_新規_未処理/2026-05-04_013213_動画編集aiスキル開発-特別講師ユキさん連携可否問合せ_6gvfg64fhrrrcqvg.md",
+        "11_タスク/01_新規_未処理/2026-05-02_021542_igリール-強者感台本-ai大量生成テスト-fb-skill_6gv55vq5q27pg4rx.md",
+        "11_タスク/01_新規_未処理/2026-05-04_013213_youtube-claude-desktop最新進化解説動画_6gvfcj7qjvwwfphg.md",
+        "11_タスク/01_新規_未処理/2026-05-02_021542_動画編集aiスキル開発-特別講師ユキさん連携可否問合せ_6gvfg64fhrrrcqvg.md"
+      ],
+      "unit_hits": [
+        "youtube/改善ログ.md",
+        "youtube/_継続タスク.md"
+      ],
+      "business_unit": "SNS事業部"
+    },
+    {
+      "name": "Instagramリール",
+      "goal": "縦型ショートを企画、台本、撮影、分析まで運用する",
+      "action": "リールの企画・台本・撮影・改善ログを自動化する",
+      "suggested_skill": "/instagram-reel-loop",
+      "priority": "OK",
+      "status": "運用中",
+      "missing": [],
+      "matched_skills": [
+        "/instagram-feed",
+        "/instagram-reel",
+        "/instagram-stories",
+        "/ig-reel-research"
+      ],
+      "knowledge_hits": [
+        "11_タスク/01_新規_未処理/2026-05-02_021542_igフィード事業部構築-月5本フィード-月10リール-毎日ス_6gv55vhmjrvp3f75.md",
+        "11_タスク/01_新規_未処理/2026-05-02_021542_igリール-強者感台本-ai大量生成テスト-fb-skill_6gv55vq5q27pg4rx.md",
+        "11_タスク/01_新規_未処理/2026-05-04_013213_igフィード事業部構築-月5本フィード-月10リール-毎日ス_6gv55vhmjrvp3f75.md",
+        "11_タスク/01_新規_未処理/2026-05-04_013213_igリール-強者感台本-ai大量生成テスト-fb-skill_6gv55vq5q27pg4rx.md",
+        "_横断ナレッジ/07_外部情報/instagram_engagement/_index.md"
+      ],
+      "unit_hits": [
+        "instagram/リール/改善ログ.md",
+        "instagram/リール/_継続タスク.md"
+      ],
+      "business_unit": "SNS事業部"
+    },
+    {
+      "name": "画像・サムネ制作",
+      "goal": "サムネ、図解、OGP、スライド画像を量産する",
+      "action": "勝ちパターン画像をナレッジ化し、生成プロンプトへ戻す",
+      "suggested_skill": "/creative-visual-loop",
+      "priority": "P1",
+      "status": "継続単位不足",
+      "missing": [
+        "継続単位"
+      ],
+      "matched_skills": [
+        "/x-article-thumbnail",
+        "/threads",
+        "/youtube-planning",
+        "/instagram-feed"
+      ],
+      "knowledge_hits": [
+        "11_タスク/01_新規_未処理/2026-05-02_021542_サムネはai生成okだが-一次情報担保-チェックリスト整備-_6gv55w8hgjcwjj65.md",
+        "11_タスク/01_新規_未処理/2026-05-02_021542_デザイン作成_6gvhjxphpwmfg2px.md",
+        "11_タスク/01_新規_未処理/2026-05-04_013213_サムネはai生成okだが-一次情報担保-チェックリスト整備-_6gv55w8hgjcwjj65.md",
+        "11_タスク/01_新規_未処理/2026-05-02_021542_900名aiマーケ講座講師ポジション-訴求スライド整備-セミ_6gv55vgrrgjcpwqx.md",
+        "11_タスク/01_新規_未処理/2026-05-02_021542_yt-サムネテンプレ-僕のツール-全部あげます-ai生成-一_6gv55v2gp963mgj5.md"
+      ],
+      "unit_hits": [],
+      "business_unit": "SNS事業部"
+    },
+    {
+      "name": "教材改善ループ",
+      "goal": "受講生質問と成果から教材を更新する",
+      "action": "質問→教材差分→更新案まで自動生成する",
+      "suggested_skill": "/course-update-loop",
+      "priority": "OK",
+      "status": "運用中",
+      "missing": [],
+      "matched_skills": [
+        "/chatwork-delivery",
+        "/qa-update"
+      ],
+      "knowledge_hits": [
+        "⭐️おさるさん受託案件/ナレッジ/04_配信_コンテンツ管理/講座内セミナー資料.md",
+        "⭐️aiマーケティング構築講座/改善ログ.md",
+        "⭐️aiマーケティング構築講座/_継続タスク.md",
+        "⭐️aiマーケティング構築講座/受講生サポート/02_施策_プロジェクト/セミナー/2026-03-08_第3回_プロンプトエンジニアリング/03_lp/_index.md",
+        "⭐️aiマーケティング構築講座/受講生サポート/02_施策_プロジェクト/セミナー/2026-04-16_第9回_claudedesktop完全攻略/02_スライド/_slide_plan.md"
+      ],
+      "unit_hits": [
+        "⭐️aiマーケティング構築講座/改善ログ.md",
+        "⭐️aiマーケティング構築講座/_継続タスク.md",
+        "⭐️aiマーケティング構築講座/受講生サポート/02_施策_プロジェクト/対談_コラボ/2026-05-04_ナレッジ_成果報告・受講生対談sop.md",
+        "⭐️aiマーケティング構築講座/ナレッジ/03_ナレッジ/01_商品固有sop/2026-05-04_ナレッジ_zoomリンク正本.md",
+        "⭐️aiマーケティング構築講座/ナレッジ/03_ナレッジ/01_商品固有sop/2026-05-04_ナレッジ_aiマーケ講座_運営sop.md"
+      ],
+      "business_unit": "プロダクト事業部"
+    },
+    {
+      "name": "CS未返信・回答",
+      "goal": "Chatworkや質問チャットを巡回し、回答品質を揃える",
+      "action": "回答後の不足ナレッジをQ&Aへ戻す",
+      "suggested_skill": "/cs-quality-loop",
+      "priority": "OK",
+      "status": "運用中",
+      "missing": [],
+      "matched_skills": [
+        "/chatwork",
+        "/chatwork-delivery",
+        "/cs-inbox",
+        "/shitumonn"
+      ],
+      "knowledge_hits": [
+        "⭐️aiマーケティング構築講座/受講生サポート/02_施策_プロジェクト/セミナー/2026-03-08_第3回_プロンプトエンジニアリング/03_lp/_index.md",
+        "⭐️aiマーケティング構築講座/受講生サポート/02_施策_プロジェクト/セミナー/2026-04-16_第9回_claudedesktop完全攻略/02_スライド/_slide_plan.md",
+        "⭐️aiマーケティング構築講座/受講生サポート/02_施策_プロジェクト/セミナー/2026-04-16_第9回_claudedesktop完全攻略/02_スライド/_index.md",
+        "⭐️aiマーケティング構築講座/受講生サポート/02_施策_プロジェクト/セミナー/2026-04-16_第9回_claudedesktop完全攻略/01_台本/2026-04-16_スライド_claudeデスクトップ完全攻略_2026年4月版.md",
+        "⭐️aiマーケティング構築講座/受講生サポート/02_施策_プロジェクト/セミナー/2026-04-16_第9回_claudedesktop完全攻略/01_台本/_index.md"
+      ],
+      "unit_hits": [
+        "⭐️aiマーケティング構築講座/ナレッジ/03_ナレッジ/01_商品固有sop/2026-05-04_ナレッジ_運営情報管理docs振り分けindex.md",
+        "cs_コミュニティ/11_タスク/01_新規_未処理/2026-05-02_012728_成果が最大化する質問やり方-撮る_6gph8x2xxfc6w345.md",
+        "cs_コミュニティ/オフ会_作業会/2026-05-04_ナレッジ_aiマーケ講座_オフ会・作業会運営sop.md",
+        "cs_コミュニティ/ナレッジ/07_外部情報/iphone_memo/2026-03-12_成果を最大化させる質問のやり方動画.md",
+        "cs_コミュニティ/ナレッジ/07_外部情報/iphone_memo/2023-07-02_fbのやり方.md"
+      ],
+      "business_unit": "プロダクト事業部"
+    },
+    {
+      "name": "セミナーアーカイブ",
+      "goal": "録画・資料・CTAをUTAGE用ページへ変換する",
+      "action": "セミナー資産を教材・投稿・LPへ再利用する",
+      "suggested_skill": "/seminar-reuse-loop",
+      "priority": "P1",
+      "status": "継続単位不足",
+      "missing": [
+        "継続単位"
+      ],
+      "matched_skills": [
+        "/seminar-archive-html"
+      ],
+      "knowledge_hits": [
+        "⭐️おさるさん受託案件/ナレッジ/02_url_導線管理/utage_lpリンク.md",
+        "⭐️おさるさん受託案件/ナレッジ/02_url_導線管理/utage_アカウント_シナリオ.md",
+        "⭐️おさるさん受託案件/ナレッジ/02_url_導線管理/セミナーページリンク_旧.md",
+        "⭐️おさるさん受託案件/ナレッジ/04_配信_コンテンツ管理/utage_命名規則.md",
+        "⭐️おさるさん受託案件/ナレッジ/04_配信_コンテンツ管理/講座内セミナー資料.md"
+      ],
+      "unit_hits": [],
+      "business_unit": "プロダクト事業部"
+    },
+    {
+      "name": "成果事例・商品改善",
+      "goal": "受講生成果を商品価値と販売素材へ変換する",
+      "action": "成果報告を事例記事・LP素材・教材改善へ変換する",
+      "suggested_skill": "/case-study-builder",
+      "priority": "P1",
+      "status": "スキル不足",
+      "missing": [
+        "スキル"
+      ],
+      "matched_skills": [],
+      "knowledge_hits": [
+        "⭐️おさるさん受託案件/ナレッジ/05_数値_アフィリエイト/obc_アフィリ_仲野さん商品購入者.md",
+        "⭐️おさるさん受託案件/ナレッジ/05_数値_アフィリエイト/obc_アフィリ_もえぞうさん商品購入者.md",
+        "⭐️おさるさん受託案件/ナレッジ/05_数値_アフィリエイト/obc_アフィリ_マーケ博士さん商品購入者.md",
+        "⭐️おさるさん受託案件/ナレッジ/05_数値_アフィリエイト/obc_アフィリ_youtubeマスターdさん商品購入者.md",
+        "⭐️おさるさん受託案件/ナレッジ/05_数値_アフィリエイト/obc_アフィリ_村上さん商品購入者.md"
+      ],
+      "unit_hits": [
+        "⭐️aiマーケティング構築講座/受講生サポート/02_施策_プロジェクト/対談_コラボ/2026-05-04_ナレッジ_成果報告・受講生対談sop.md",
+        "⭐️aiマーケティング構築講座/ナレッジ/03_ナレッジ/01_商品固有sop/2026-05-04_ナレッジ_zoomリンク正本.md",
+        "⭐️aiマーケティング構築講座/ナレッジ/03_ナレッジ/01_商品固有sop/2026-05-04_ナレッジ_aiマーケ講座_運営sop.md",
+        "⭐️aiマーケティング構築講座/ナレッジ/03_ナレッジ/01_商品固有sop/2026-05-04_ナレッジ_運営情報管理docs振り分けindex.md",
+        "cs_コミュニティ/11_タスク/01_新規_未処理/2026-05-02_012728_成果が最大化する質問やり方-撮る_6gph8x2xxfc6w345.md"
+      ],
+      "business_unit": "プロダクト事業部"
+    },
+    {
+      "name": "LP・UTAGE導線",
+      "goal": "LP、フォーム、決済、サンクスページを管理する",
+      "action": "LP改善案とUTAGE更新差分を自動で出す",
+      "suggested_skill": "/lp-conversion-loop",
+      "priority": "P1",
+      "status": "継続単位不足",
+      "missing": [
+        "継続単位"
+      ],
+      "matched_skills": [
+        "/utage",
+        "/utage-html"
+      ],
+      "knowledge_hits": [
+        "セールスライティング/lp_セールスページ/lp_セールスページ_from共通/_index.md",
+        "セールスライティング/lp_セールスページ/lp_from08/_index.md",
+        "セールスライティング/lp_セールスページ/02_lp_セールスページ/_index.md",
+        "セールスライティング/lp_セールスページ/lp_セールスページ_from04/_index.md",
+        "セミナーセールス/ナレッジ/セミナー台本_資料_from05/星川分析用：【共有用】おさる式最新ファネル × utage完全攻略セミナー＠2024年2月.txt"
+      ],
+      "unit_hits": [],
+      "business_unit": "セールス"
+    },
+    {
+      "name": "セミナー販売",
+      "goal": "セミナー台本、オファー、クロージングを改善する",
+      "action": "視聴反応と成約率からセミナー台本を改善する",
+      "suggested_skill": "/seminar-sales-loop",
+      "priority": "P1",
+      "status": "継続単位不足",
+      "missing": [
+        "継続単位"
+      ],
+      "matched_skills": [
+        "/slide"
+      ],
+      "knowledge_hits": [
+        "セミナーセールス/ナレッジ/セミナー_セールス_from01星川/セミナー_セールスセミナー構成＆運営方針.md",
+        "セミナーセールス/ナレッジ/セミナー_セールス_from01星川/セミナー_自社会員コンテンツ＆live.md",
+        "セミナーセールス/ナレッジ/セミナー_セールス_from01星川/【おさる式ナレッジ：長尺セールス台本構築編（セミナー_個別相談）】.txt",
+        "セミナーセールス/ナレッジ/セミナー_セールス_from01星川/オフ会_アンバサダー制度＆販売戦略.md",
+        "セミナーセールス/ナレッジ/セミナー_セールス_from01星川/セミナー_セールスファネル戦略.md"
+      ],
+      "unit_hits": [],
+      "business_unit": "セールス"
+    },
+    {
+      "name": "個別相談",
+      "goal": "相談前準備、ヒアリング、提案、追客を標準化する",
+      "action": "相談ログから提案書・追客文・失注理由を作る",
+      "suggested_skill": "/consulting-sales-assistant",
+      "priority": "P0",
+      "status": "スキル / 継続単位不足",
+      "missing": [
+        "スキル",
+        "継続単位"
+      ],
+      "matched_skills": [],
+      "knowledge_hits": [
+        "セミナーセールス/ナレッジ/セミナー_セールス_from01星川/【おさる式ナレッジ：長尺セールス台本構築編（セミナー_個別相談）】.txt",
+        "個別相談セールス/ナレッジ/セミナー_個別相談_from08/apple純正メモ_セミナー台本_情報まとめ/001_▼ロジンさんセミナー解説（有益）.md",
+        "個別相談セールス/ナレッジ/セミナー_個別相談_from08/apple純正メモ_セミナー台本_情報まとめ/_index.md",
+        "個別相談セールス/ナレッジ/セミナー_個別相談_from08/apple純正メモ_個人コンサル攻略/004_お互いの自己紹介.md",
+        "個別相談セールス/ナレッジ/セミナー_個別相談_from08/apple純正メモ_個人コンサル攻略/005_星川裕哉の自己紹介.md"
+      ],
+      "unit_hits": [],
+      "business_unit": "セールス"
+    },
+    {
+      "name": "成約分析",
+      "goal": "申込、成約、失注、流入別の改善点を見つける",
+      "action": "成約率の落ち所を見つけて改善タスクへ変換する",
+      "suggested_skill": "/sales-kpi-analyzer",
+      "priority": "P0",
+      "status": "スキル / 継続単位不足",
+      "missing": [
+        "スキル",
+        "継続単位"
+      ],
+      "matched_skills": [],
+      "knowledge_hits": [
+        "セミナーセールス/ナレッジ/05_セミナー_ウェビナー/01_セミナー設計/2026-05-04_ナレッジ_aiマーケ講座_セミナー企画・成約導線.md"
+      ],
+      "unit_hits": [],
+      "business_unit": "セールス"
+    },
+    {
+      "name": "LINE配信",
+      "goal": "LINE配信、反応、クリック、成約までを改善する",
+      "action": "配信反応から次の配信案を自動生成する",
+      "suggested_skill": "/line-broadcast-loop",
+      "priority": "P1",
+      "status": "継続単位不足",
+      "missing": [
+        "継続単位"
+      ],
+      "matched_skills": [
+        "/campaign",
+        "/line-intake",
+        "/comm-self-audit"
+      ],
+      "knowledge_hits": [
+        "_旧d2_組織データ/07_外部情報/07_外部情報/2026-04-20_googlesheets_審査フォーム_決済line_ファネル詳細.md",
+        "_旧d2_組織データ/07_外部情報/07_外部情報/iphone_memo/2025-10-07_配信面.md",
+        "_旧d2_組織データ/07_外部情報/07_外部情報/iphone_memo/2026-03-18_line確認✅.md",
+        "_旧d2_組織データ/07_外部情報/07_外部情報/iphone_memo/2023-02-24_line内送信のセミナー募集動画.md",
+        "_旧d2_組織データ/07_外部情報/07_外部情報/iphone_memo/2022-12-23_【lstep配信ローンチ動画】.md"
+      ],
+      "unit_hits": [],
+      "business_unit": "リストマーケ事業部"
+    },
+    {
+      "name": "メール・メルマガ",
+      "goal": "メール配信の件名、本文、反応改善を回す",
+      "action": "メール反応から件名と本文の勝ち筋を抽出する",
+      "suggested_skill": "/email-nurture-loop",
+      "priority": "P0",
+      "status": "スキル / 継続単位不足",
+      "missing": [
+        "スキル",
+        "継続単位"
+      ],
+      "matched_skills": [],
+      "knowledge_hits": [
+        "_旧d2_組織データ/07_外部情報/07_外部情報/loom/セールス・ローンチ/2026-01-23_メールマガジンの戦略的活用法とファンの育成_52b66f3203.md",
+        "_旧d2_組織データ/07_外部情報/07_外部情報/loom/コンテンツ制作/2025-10-02_メルマガと長文ライティングのためのai育成戦略📈_9372aa75e5.md",
+        "_旧d2_組織データ/07_外部情報/07_外部情報/loom/fb・質問回答/2025-10-09_メルマガ戦略とai活用の重要性_3737fe6fde.md",
+        "_旧d2_組織データ/07_外部情報/07_外部情報/loom/fb・質問回答/2025-09-02_最新のaiデザインとメルマガ戦略のアップデート✨_bc652b5759.md",
+        "_旧d2_組織データ/07_外部情報/07_外部情報/loom/fb・質問回答/2025-11-13_メルマガ改善のための戦略共有📈_6fa23bce2f.md"
+      ],
+      "unit_hits": [],
+      "business_unit": "リストマーケ事業部"
+    },
+    {
+      "name": "オープンチャット運営",
+      "goal": "オプチャ投稿、温度感、質問を販売導線へつなぐ",
+      "action": "オプチャ反応をQ&Aと配信ネタへ変換する",
+      "suggested_skill": "/openchat-nurture-loop",
+      "priority": "P0",
+      "status": "スキル / 継続単位不足",
+      "missing": [
+        "スキル",
+        "継続単位"
+      ],
+      "matched_skills": [],
+      "knowledge_hits": [
+        "_旧d2_組織データ/07_外部情報/07_外部情報/iphone_memo/2026-04-02_質問回答✅.md",
+        "_旧d2_組織データ/07_外部情報/07_外部情報/iphone_memo/2025-08-13_オープンチャット「マーケ博士×ピグ先生　2026年の未来予測を大公開　最新インス.md",
+        "_旧d2_組織データ/07_外部情報/07_外部情報/iphone_memo/2025-09-01_オプチャの立ち位置.md",
+        "_旧d2_組織データ/07_外部情報/07_外部情報/iphone_memo/2025-06-19_マーケ、個別チャット部隊。パーソナライズされた質問を配信したい。.md",
+        "_旧d2_組織データ/07_外部情報/07_外部情報/iphone_memo/2022-11-07_めぐさんpm質問まとめ.md"
+      ],
+      "unit_hits": [],
+      "business_unit": "リストマーケ事業部"
+    },
+    {
+      "name": "ローンチシナリオ",
+      "goal": "リスト状態に応じてローンチ全体を組む",
+      "action": "リスト温度別の配信・セミナー・販売導線を組む",
+      "suggested_skill": "/launch-sequence-builder",
+      "priority": "P1",
+      "status": "継続単位不足",
+      "missing": [
+        "継続単位"
+      ],
+      "matched_skills": [
+        "/campaign",
+        "/line-intake"
+      ],
+      "knowledge_hits": [
+        "_旧d2_組織データ/07_外部情報/07_外部情報/2026-04-20_googlesheets_進捗管理_ローンチ準備フロー.md",
+        "_旧d2_組織データ/07_外部情報/07_外部情報/2026-04-20_googlesheets_oboローンチ_広告集計.md",
+        "_旧d2_組織データ/07_外部情報/07_外部情報/iphone_memo/2024-11-18_lstep 友達追加時シナリオ(テンプレ).md",
+        "_旧d2_組織データ/07_外部情報/07_外部情報/iphone_memo/2025-05-04_しょうたさん運用代行最強だからお任せしつつ、ai系ローンチに関する投稿やストーリ.md",
+        "_旧d2_組織データ/07_外部情報/07_外部情報/iphone_memo/2025-11-01_aiでローンチはできるねぇ。やろうかぁ。.md"
+      ],
+      "unit_hits": [],
+      "business_unit": "リストマーケ事業部"
+    },
+    {
+      "name": "freee月次",
+      "goal": "売上、経費、仕訳、月次数字を経営判断へ接続する",
+      "action": "月次数字をKPIと意思決定メモへ変換する",
+      "suggested_skill": "/monthly-finance-review",
+      "priority": "OK",
+      "status": "運用中",
+      "missing": [],
+      "matched_skills": [
+        "/freee",
+        "/receipt",
+        "/payment-monitor",
+        "/zeiri"
+      ],
+      "knowledge_hits": [
+        "11_タスク/01_新規_未処理/2026-05-02_021542_法人化-freee法人会計-セットアップ_6grxcc9wwqxcr5gv.md",
+        "11_タスク/01_新規_未処理/2026-05-02_021542_個人freee-と別インスタンスで運用分離確認_6grxcff76rrcwcv3.md",
+        "11_タスク/01_新規_未処理/2026-05-02_021542_freee登録-創立費タグ_6grxcfxmv57xgwp3.md",
+        "11_タスク/01_新規_未処理/2026-05-02_021542_法人化-創立費-開業費-証憑収集と仕訳_6grxcfj7hw324mf3.md",
+        "11_タスク/01_新規_未処理/2026-05-02_021542_freee登録-開業費タグ_6grxcfhqx5cjj7g3.md"
+      ],
+      "unit_hits": [
+        "_sop/_deprecated_2026-04-29_法人クレカ選定_freeeカードunlimited運用sop.md",
+        "_sop/freee証憑インボックス運用sop.md",
+        "_sop/月次決算sop.md"
+      ],
+      "business_unit": "経理"
+    },
+    {
+      "name": "証憑OCR",
+      "goal": "レシート、請求書、領収書を証憑化する",
+      "action": "証憑不足を検知し、freee登録候補まで作る",
+      "suggested_skill": "/receipt-to-freee-loop",
+      "priority": "OK",
+      "status": "運用中",
+      "missing": [],
+      "matched_skills": [
+        "/freee",
+        "/receipt"
+      ],
+      "knowledge_hits": [
+        "11_タスク/01_新規_未処理/2026-05-02_021542_設立日前の領収書-全件スキャン-抽出-登記費用-印鑑-定款認_6grxcfpgqf2rfmg3.md",
+        "11_タスク/01_新規_未処理/2026-05-02_021542_liberty-owens-へ法人名義請求書発行依頼-5月分_6grxcg85cxpvg5hv.md",
+        "11_タスク/01_新規_未処理/2026-05-02_021542_法人化-創立費-開業費-証憑収集と仕訳_6grxcfj7hw324mf3.md",
+        "11_タスク/01_新規_未処理/2026-05-02_021542_設立日-事業開始の領収書-全件スキャン-抽出_6grxcfqjw2jrmvhv.md",
+        "_旧タスクファイル群/01_新規_未処理/2026-05-02_012728_設立日-事業開始の領収書-全件スキャン-抽出_6grxcfqjw2jrmvhv.md"
+      ],
+      "unit_hits": [
+        "_sop/freee証憑インボックス運用sop.md",
+        "証憑/改善ログ.md",
+        "証憑/_継続タスク.md"
+      ],
+      "business_unit": "経理"
+    },
+    {
+      "name": "決済・入金監視",
+      "goal": "決済失敗、未入金、引落エラーを早期検知する",
+      "action": "決済異常を検知し、連絡文と対応タスクへ変換する",
+      "suggested_skill": "/payment-risk-monitor",
+      "priority": "P1",
+      "status": "継続単位不足",
+      "missing": [
+        "継続単位"
+      ],
+      "matched_skills": [
+        "/payment-monitor",
+        "/gmail"
+      ],
+      "knowledge_hits": [
+        "11_タスク/01_新規_未処理/2026-05-02_021542_stripe-決済代行の振込先口座を法人口座に変更_6grxcjcj7q5wcwhv.md",
+        "_旧タスクファイル群/01_新規_未処理/2026-05-02_012728_stripe-決済代行の振込先口座を法人口座に変更_6grxcjcj7q5wcwhv.md"
+      ],
+      "unit_hits": [],
+      "business_unit": "経理"
+    },
+    {
+      "name": "契約・税務管理",
+      "goal": "契約書、税理士、法人税務の抜け漏れを管理する",
+      "action": "契約・税務期限をダッシュボードへ反映する",
+      "suggested_skill": "/contract-tax-tracker",
+      "priority": "OK",
+      "status": "運用中",
+      "missing": [],
+      "matched_skills": [
+        "/zeiri"
+      ],
+      "knowledge_hits": [
+        "11_タスク/01_新規_未処理/2026-05-02_021542_法人化-インボイス発行事業者-法人登録-e-tax_6grxcxp9v9ffpcrv.md",
+        "11_タスク/01_新規_未処理/2026-05-02_021542_法人化-freee法人会計-セットアップ_6grxcc9wwqxcr5gv.md",
+        "11_タスク/01_新規_未処理/2026-05-02_021542_法人化-gmoあおぞら-初期設定-運用開始_6grxcwx9p8h92853.md",
+        "11_タスク/01_新規_未処理/2026-05-02_021542_stripe-決済代行の振込先口座を法人口座に変更_6grxcjcj7q5wcwhv.md",
+        "11_タスク/01_新規_未処理/2026-05-02_021542_法人クレカ-申込送信-優先2社同時_6grxcxmg33jj7h2v.md"
+      ],
+      "unit_hits": [
+        "契約書管理/改善ログ.md",
+        "契約書管理/_継続タスク.md"
+      ],
+      "business_unit": "経理"
+    },
+    {
+      "name": "KPIダッシュボード",
+      "goal": "事業部KPIと優先順位を毎日見える化する",
+      "action": "KPI差分から今日の経営判断を出す",
+      "suggested_skill": "/kpi-command-center",
+      "priority": "P1",
+      "status": "継続単位不足",
+      "missing": [
+        "継続単位"
+      ],
+      "matched_skills": [
+        "/morning",
+        "/weekly-evolve",
+        "/dashboard",
+        "/analyze"
+      ],
+      "knowledge_hits": [
+        "_メモリ_学び/_旧d8_経営オーケストレーション/01_feedback/2026-04-24_openai_verification_kyb_vs_persona.md",
+        "_メモリ_学び/_旧d8_経営オーケストレーション/01_feedback/2026-04-24_openai_api_key_types.md",
+        "11_タスク/01_新規_未処理/2026-05-02_021542_claudecode経営-可視化システム-ローカルを都度同期_6grf4pr8qhq7vrj5.md",
+        "_旧d8_組織データ/02_ゴール_kpi/_index.md",
+        "_旧d8_組織データ/02_ゴール_kpi/05_ロードマップ/roadmap.md"
+      ],
+      "unit_hits": [],
+      "business_unit": "経営企画"
+    },
+    {
+      "name": "事業計画・優先順位",
+      "goal": "短期施策と中長期戦略を接続する",
+      "action": "週次で施策の継続・停止・強化を判定する",
+      "suggested_skill": "/strategy-priority-review",
+      "priority": "P1",
+      "status": "継続単位不足",
+      "missing": [
+        "継続単位"
+      ],
+      "matched_skills": [
+        "/task",
+        "/tasks",
+        "/task-enrich",
+        "/todoist"
+      ],
+      "knowledge_hits": [
+        "_旧d8_組織データ/04_議事録_ミーティング/06_plaud/_関連リンク/2026-03-24_打ち合わせ_ai事業活用とプロモーション戦略.md",
+        "_旧d8_組織データ/06_一次情報_ナレッジ/07_外部情報/loom/その他/2026-01-22_初心者向けの最速実績ファネル戦略_4acec1d9cb.md",
+        "_旧d8_組織データ/06_一次情報_ナレッジ/07_外部情報/loom/fb・質問回答/2025-08-22_cta動画のコンテンツ戦略について_2eabf0d661.md",
+        "_旧d8_組織データ/06_一次情報_ナレッジ/07_外部情報/loom/fb・質問回答/2025-10-09_ai活用とストーリー作成の戦略についてのディスカッション_💡_a443e2bcf9.md",
+        "_旧タスクファイル群/_d8_archive/01_新規_未処理/2026-04-21_232205_aiマーケ講座-裏戦略_6gqx8prqf8xgv54x.md"
+      ],
+      "unit_hits": [],
+      "business_unit": "経営企画"
+    },
+    {
+      "name": "競合・市場リサーチ",
+      "goal": "市場変化と競合施策を商品・発信へ変換する",
+      "action": "競合調査を商品・SNS・LP改善案へ振り分ける",
+      "suggested_skill": "/market-intelligence-loop",
+      "priority": "P1",
+      "status": "継続単位不足",
+      "missing": [
+        "継続単位"
+      ],
+      "matched_skills": [
+        "/analyze"
+      ],
+      "knowledge_hits": [
+        "11_タスク/01_新規_未処理/2026-05-02_024618_コンセプト設計-aiマーケ市場が変わった感-new感-事例シ_6gwh5fch4ph99pqr.md",
+        "プロジェクト/法人化プロジェクト/設立書類/01_税理士探し/2026-04-06_税理士リサーチ_法人設立支援_東京.md",
+        "プロジェクト/法人化プロジェクト/設立書類/02_法人設立準備/2026-04-06_税理士リサーチ_top20.md",
+        "プロジェクト/法人化プロジェクト/設立書類/02_法人設立準備/2026-04-06_税理士リサーチ_比較サイト調査.md",
+        "プロジェクト/法人化プロジェクト/02_施策/法人設立準備/2026-04-06_税理士リサーチ_top20.md"
+      ],
+      "unit_hits": [],
+      "business_unit": "経営企画"
+    },
+    {
+      "name": "会議・録音ナレッジ化",
+      "goal": "会議、Zoom、Plaudを意思決定ログに変換する",
+      "action": "録音から決定事項・タスク・ナレッジ候補を抽出する",
+      "suggested_skill": "/meeting-decision-extractor",
+      "priority": "P0",
+      "status": "スキル / 継続単位不足",
+      "missing": [
+        "スキル",
+        "継続単位"
+      ],
+      "matched_skills": [],
+      "knowledge_hits": [
+        "_旧d8_組織データ/04_議事録_ミーティング/05_zoom文字起こし/2026-04-29_文字起こし_2026-04-27_夏目さんミーティング_スキル構築議論.md",
+        "_旧d8_組織データ/04_議事録_ミーティング/05_zoom文字起こし/2026-04-29_文字起こし_ミーティング.md",
+        "_旧d8_組織データ/04_議事録_ミーティング/06_plaud/2026-04-16_001011.md",
+        "_旧d8_組織データ/04_議事録_ミーティング/06_plaud/2026-04-15_160026.md",
+        "_旧d8_組織データ/04_議事録_ミーティング/06_plaud/2026-03-22_190658.md"
+      ],
+      "unit_hits": [],
+      "business_unit": "経営企画"
+    },
+    {
+      "name": "スキル自動改善",
+      "goal": "反復業務をスキル化し、FBで改善する",
+      "action": "不足スキルを検出し、skill-creatorへ渡す仕様を作る",
+      "suggested_skill": "/skill-gap-builder",
+      "priority": "P1",
+      "status": "継続単位不足",
+      "missing": [
+        "継続単位"
+      ],
+      "matched_skills": [
+        "/auto-skill",
+        "/anthropic-skills:skill-creator",
+        "/empirical-prompt-tuning",
+        "/FB"
+      ],
+      "knowledge_hits": [
+        "_skills.md",
+        "_保留_広告事業部_未着手/d4_広告運用_保留/02_組織機能/05_スキル_カタログ/_index.md",
+        "_保留_広告事業部_未着手/d4_広告運用_保留/06_一次情報_ナレッジ/07_外部情報/loom/fb・質問回答/2025-06-15_aiとsnsを活用した完全攻略セミナーのアウトプット方法_f80c7a5617.md",
+        "_保留_広告事業部_未着手/d4_広告運用_保留/06_一次情報_ナレッジ/07_外部情報/loom/fb・質問回答/2025-10-08_モコ_meta広告運用_×_クリエイティブ制作さんへの質問回答・fb_d295fc1dee.md",
+        "_保留_広告事業部_未着手/d4_広告運用_保留/06_一次情報_ナレッジ/07_外部情報/loom/fb・質問回答/2025-10-08_動画制作における効果的なアプローチと戦略_2b10ecb818.md"
+      ],
+      "unit_hits": [],
+      "business_unit": "AI活用事業部"
+    },
+    {
+      "name": "ナレッジ自動同期",
+      "goal": "外部APIとローカル知見をナレッジへ集約する",
+      "action": "古いナレッジと不足ナレッジを毎日検知する",
+      "suggested_skill": "/knowledge-health-check",
+      "priority": "OK",
+      "status": "運用中",
+      "missing": [],
+      "matched_skills": [
+        "/knowledge",
+        "/knowledge-creator",
+        "/knowledge-sync",
+        "/morning-knowledge"
+      ],
+      "knowledge_hits": [
+        "_保留_広告事業部_未着手/d4_広告運用_保留/06_一次情報_ナレッジ/_index.md",
+        "_保留_広告事業部_未着手/d4_広告運用_保留/06_一次情報_ナレッジ/07_外部情報/mindmeister_ref/_index.md",
+        "_保留_広告事業部_未着手/d4_広告運用_保留/06_一次情報_ナレッジ/07_外部情報/mindmeister/_index.md",
+        "_保留_広告事業部_未着手/d4_広告運用_保留/06_一次情報_ナレッジ/07_外部情報/iphone_memo/2025-09-28_最強の講座にしてほぼサポートなしでオートウェビナーで最強コンテンツとツールを30.md",
+        "_保留_広告事業部_未着手/d4_広告運用_保留/06_一次情報_ナレッジ/07_外部情報/iphone_memo/2026-04-17_おさるさん監修のコンテンツビジネス特化のai講座.md"
+      ],
+      "unit_hits": [
+        "_保留_広告事業部_未着手/d4_広告運用_保留/06_一次情報_ナレッジ/01_sop_標準手順書/sop.md",
+        "_保留_広告事業部_未着手/d4_広告運用_保留/06_一次情報_ナレッジ/01_sop_標準手順書/_index.md"
+      ],
+      "business_unit": "AI活用事業部"
+    },
+    {
+      "name": "ディレクトリ継続改善",
+      "goal": "1媒体・1継続タスク・1主要スキル構造へ寄せ続ける",
+      "action": "事業部ごとの不足フォルダ・SOP・ナレッジを自動補完する",
+      "suggested_skill": "/business-unit-gap-audit",
+      "priority": "P1",
+      "status": "継続単位不足",
+      "missing": [
+        "継続単位"
+      ],
+      "matched_skills": [
+        "/migrate-data",
+        "/ai-management-evolution",
+        "/organize"
+      ],
+      "knowledge_hits": [
+        "_保留_広告事業部_未着手/active_2026-05/11_タスク/01_新規_未処理/2026-05-03_000038_ads-038_初期キャンペーン構造.md",
+        "システム改善/ai経営ディレクトリ改善/readme.md",
+        "システム改善/ai経営ディレクトリ改善/reports/latest.json",
+        "システム改善/ai経営ディレクトリ改善/reports/2026-05-04_audit.md",
+        "システム改善/ai経営ディレクトリ改善/reports/2026-05-05_audit.md"
+      ],
+      "unit_hits": [],
+      "business_unit": "AI活用事業部"
+    },
+    {
+      "name": "公開ダッシュボード",
+      "goal": "経営状態をチーム共有URLへ安全に反映する",
+      "action": "公開前に秘匿情報・鮮度・リンクを検査する",
+      "suggested_skill": "/dashboard-publish-audit",
+      "priority": "P0",
+      "status": "スキル / 継続単位不足",
+      "missing": [
+        "スキル",
+        "継続単位"
+      ],
+      "matched_skills": [],
+      "knowledge_hits": [
+        "claude_code/docs/_intent/01_dashboard.md",
+        "システム改善/プロダクト_経営可視化システム/_index.md",
+        "システム改善/プロダクト_経営可視化システム/dashboard/readme.md",
+        "システム改善/プロダクト_経営可視化システム/dashboard/package-lock.json",
+        "システム改善/プロダクト_経営可視化システム/dashboard/package.json"
+      ],
+      "unit_hits": [],
+      "business_unit": "AI活用事業部"
+    }
+  ]
+}
