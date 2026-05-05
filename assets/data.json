@@ -339,7 +339,7 @@
     {
       "command": "/dashboard",
       "display": "経営ダッシュボード",
-      "usage": "Prosolv Studio経営ダッシュボード起動・更新（http://localhost:3100）",
+      "usage": "Prosolv Studio経営ダッシュボード/スキル司令室の起動・更新・公開URL最新化",
       "category": "ダッシュボード・データ分析",
       "group": "経営管理",
       "business_unit": "経営企画"
@@ -601,7 +601,7 @@
       "business_unit": "AI活用事業部"
     }
   ],
-  "last_update": "2026-05-05 17:57",
+  "last_update": "2026-05-05 17:59",
   "business_units": {
     "SNS事業部": {
       "tasks": 38,
